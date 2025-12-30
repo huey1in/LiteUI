@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>头像 Avatar - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link active">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>头像 Avatar</h1>
+      <p class="docs-lead">头像用于展示用户或实体的图像。</p>
+
+      <h2>不同尺寸</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row" style="align-items: center;">
+          <div class="ui-avatar ui-avatar-xs">XS</div>
+          <div class="ui-avatar ui-avatar-sm">S</div>
+          <div class="ui-avatar ui-avatar-md">M</div>
+          <div class="ui-avatar ui-avatar-lg">L</div>
+          <div class="ui-avatar ui-avatar-xl">XL</div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-avatar ui-avatar-xs"&gt;XS&lt;/div&gt;
+&lt;div class="ui-avatar ui-avatar-sm"&gt;S&lt;/div&gt;
+&lt;div class="ui-avatar ui-avatar-md"&gt;M&lt;/div&gt;
+&lt;div class="ui-avatar ui-avatar-lg"&gt;L&lt;/div&gt;
+&lt;div class="ui-avatar ui-avatar-xl"&gt;XL&lt;/div&gt;</code></pre>
+
+      <h2>带状态的头像</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <div class="ui-avatar-wrapper">
+            <div class="ui-avatar ui-avatar-md">A</div>
+            <span class="ui-avatar-status online"></span>
+          </div>
+          <div class="ui-avatar-wrapper">
+            <div class="ui-avatar ui-avatar-md">B</div>
+            <span class="ui-avatar-status away"></span>
+          </div>
+          <div class="ui-avatar-wrapper">
+            <div class="ui-avatar ui-avatar-md">C</div>
+            <span class="ui-avatar-status busy"></span>
+          </div>
+          <div class="ui-avatar-wrapper">
+            <div class="ui-avatar ui-avatar-md">D</div>
+            <span class="ui-avatar-status offline"></span>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-avatar-wrapper"&gt;
+  &lt;div class="ui-avatar ui-avatar-md"&gt;A&lt;/div&gt;
+  &lt;span class="ui-avatar-status online"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;!-- 状态: online / away / busy / offline --&gt;</code></pre>
+
+      <h2>头像组</h2>
+      <div class="docs-demo">
+        <div class="ui-avatar-group">
+          <div class="ui-avatar ui-avatar-md">A</div>
+          <div class="ui-avatar ui-avatar-md">B</div>
+          <div class="ui-avatar ui-avatar-md">C</div>
+          <div class="ui-avatar ui-avatar-md">+3</div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-avatar-group"&gt;
+  &lt;div class="ui-avatar ui-avatar-md"&gt;A&lt;/div&gt;
+  &lt;div class="ui-avatar ui-avatar-md"&gt;B&lt;/div&gt;
+  &lt;div class="ui-avatar ui-avatar-md"&gt;+3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>类名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>.ui-avatar</code></td><td>头像基础类</td></tr>
+          <tr><td><code>.ui-avatar-xs/sm/md/lg/xl</code></td><td>头像尺寸</td></tr>
+          <tr><td><code>.ui-avatar-wrapper</code></td><td>头像包装器（用于状态点）</td></tr>
+          <tr><td><code>.ui-avatar-status</code></td><td>状态点基础类</td></tr>
+          <tr><td><code>.online/.away/.busy/.offline</code></td><td>状态类型</td></tr>
+          <tr><td><code>.ui-avatar-group</code></td><td>头像组</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

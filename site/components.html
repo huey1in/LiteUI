@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>按钮 Button - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <script src="../dist/1in-icons.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link active">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>按钮 Button</h1>
+      <p class="docs-lead">按钮用于触发操作或事件。</p>
+
+      <h2>基础按钮</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <button class="ui-btn ui-btn-primary">主要按钮</button>
+          <button class="ui-btn ui-btn-secondary">次要按钮</button>
+          <button class="ui-btn ui-btn-ghost">幽灵按钮</button>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;button class="ui-btn ui-btn-primary"&gt;主要按钮&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-secondary"&gt;次要按钮&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-ghost"&gt;幽灵按钮&lt;/button&gt;</code></pre>
+
+      <h2>状态按钮</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <button class="ui-btn ui-btn-success">成功</button>
+          <button class="ui-btn ui-btn-danger">危险</button>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;button class="ui-btn ui-btn-success"&gt;成功&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-danger"&gt;危险&lt;/button&gt;</code></pre>
+
+      <h2>大按钮</h2>
+      <div class="docs-demo">
+        <button class="ui-btn ui-btn-primary ui-btn-lg">大按钮</button>
+      </div>
+      <pre class="docs-code"><code>&lt;button class="ui-btn ui-btn-primary ui-btn-lg"&gt;大按钮&lt;/button&gt;</code></pre>
+
+      <h2>图标按钮</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <button class="ui-btn-icon" data-icon="bell"></button>
+          <button class="ui-btn-icon" data-icon="cog"></button>
+          <button class="ui-btn-icon" data-icon="user"></button>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;button class="ui-btn-icon"&gt;
+  &lt;svg&gt;...&lt;/svg&gt;  &lt;!-- 使用 Icons.bell 等 --&gt;
+&lt;/button&gt;
+
+&lt;!-- 或使用 icon() 函数 --&gt;
+&lt;script&gt;
+  btn.innerHTML = icon('bell');
+&lt;/script&gt;</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>类名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>.ui-btn</code></td><td>按钮基础类</td></tr>
+          <tr><td><code>.ui-btn-primary</code></td><td>主要按钮（紫色）</td></tr>
+          <tr><td><code>.ui-btn-secondary</code></td><td>次要按钮（灰色）</td></tr>
+          <tr><td><code>.ui-btn-ghost</code></td><td>幽灵按钮（透明）</td></tr>
+          <tr><td><code>.ui-btn-success</code></td><td>成功按钮（绿色）</td></tr>
+          <tr><td><code>.ui-btn-danger</code></td><td>危险按钮（红色）</td></tr>
+          <tr><td><code>.ui-btn-lg</code></td><td>大尺寸按钮</td></tr>
+          <tr><td><code>.ui-btn-icon</code></td><td>图标按钮</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

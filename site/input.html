@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>输入框 Input - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link active">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>输入框 Input</h1>
+      <p class="docs-lead">输入框用于接收用户输入。</p>
+
+      <h2>基础输入框</h2>
+      <div class="docs-demo">
+        <div style="max-width: 320px;">
+          <input type="text" class="ui-input" placeholder="请输入内容">
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;input type="text" class="ui-input" placeholder="请输入内容"&gt;</code></pre>
+
+      <h2>带标签的输入框</h2>
+      <div class="docs-demo">
+        <div class="ui-form-group" style="max-width: 320px;">
+          <label class="ui-label">用户名</label>
+          <input type="text" class="ui-input" placeholder="请输入用户名">
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-form-group"&gt;
+  &lt;label class="ui-label"&gt;用户名&lt;/label&gt;
+  &lt;input type="text" class="ui-input" placeholder="请输入用户名"&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>类名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>.ui-input</code></td><td>输入框</td></tr>
+          <tr><td><code>.ui-form-group</code></td><td>表单字段容器</td></tr>
+          <tr><td><code>.ui-label</code></td><td>表单标签</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

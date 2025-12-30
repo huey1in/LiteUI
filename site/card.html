@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卡片 Card - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link active">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>卡片 Card</h1>
+      <p class="docs-lead">卡片是一个容器组件，用于展示内容。</p>
+
+      <h2>基础卡片</h2>
+      <div class="docs-demo">
+        <div class="ui-card" style="max-width: 360px;">
+          <h2 class="ui-card-title">卡片标题</h2>
+          <p class="ui-card-subtitle">这是卡片的描述文字。</p>
+          <button class="ui-btn ui-btn-primary">操作按钮</button>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-card"&gt;
+  &lt;h2 class="ui-card-title"&gt;卡片标题&lt;/h2&gt;
+  &lt;p class="ui-card-subtitle"&gt;描述文字&lt;/p&gt;
+  &lt;button class="ui-btn ui-btn-primary"&gt;操作&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>小卡片</h2>
+      <div class="docs-demo">
+        <div class="ui-card ui-card-sm" style="max-width: 360px;">
+          <div style="font-weight: 700;">小卡片</div>
+          <div style="font-size: 0.875rem; color: var(--ui-text-muted);">更紧凑的内边距</div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-card ui-card-sm"&gt;...&lt;/div&gt;</code></pre>
+
+      <h2>毛玻璃卡片</h2>
+      <div class="docs-demo" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); padding: 2rem; border-radius: 0.75rem;">
+        <div class="ui-card ui-card-sm ui-card-blur" style="max-width: 360px;">
+          <div style="font-weight: 800;">毛玻璃效果</div>
+          <div style="font-size: 0.75rem; color: var(--ui-text-muted);">适合放在渐变背景上</div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-card ui-card-blur"&gt;...&lt;/div&gt;</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>类名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>.ui-card</code></td><td>卡片基础类</td></tr>
+          <tr><td><code>.ui-card-sm</code></td><td>小尺寸卡片</td></tr>
+          <tr><td><code>.ui-card-blur</code></td><td>毛玻璃效果</td></tr>
+          <tr><td><code>.ui-card-title</code></td><td>卡片标题</td></tr>
+          <tr><td><code>.ui-card-subtitle</code></td><td>卡片副标题</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

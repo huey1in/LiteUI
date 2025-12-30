@@ -1,0 +1,55 @@
+{
+  "name": "1inui",
+  "version": "1.0.2",
+  "description": "轻量级前端组件库",
+  "main": "dist/1in-ui.js",
+  "module": "dist/1in-ui.esm.js",
+  "style": "dist/1in-ui.css",
+  "types": "dist/1in-ui.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/1in-ui.esm.js",
+      "require": "./dist/1in-ui.js",
+      "types": "./dist/1in-ui.d.ts"
+    },
+    "./css": "./dist/1in-ui.css",
+    "./icons": {
+      "import": "./dist/1in-icons.esm.js",
+      "require": "./dist/1in-icons.js"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "discord",
+    "css",
+    "frontend",
+    "lightweight"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "terser": "^5.27.0",
+    "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "buffer-from": "^1.1.2",
+    "commander": "^2.20.3",
+    "source-map": "^0.6.1",
+    "source-map-support": "^0.5.21"
+  }
+}

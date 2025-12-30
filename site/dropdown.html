@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下拉菜单 Dropdown - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link active">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>下拉菜单 Dropdown</h1>
+      <p class="docs-lead">下拉菜单用于展示一组操作选项。</p>
+
+      <h2>基础下拉菜单</h2>
+      <div class="docs-demo">
+        <div class="ui-dropdown">
+          <button class="ui-btn ui-btn-secondary" data-dropdown>点击展开</button>
+          <div class="ui-dropdown-menu">
+            <a href="#" class="ui-dropdown-item">选项一</a>
+            <a href="#" class="ui-dropdown-item">选项二</a>
+            <a href="#" class="ui-dropdown-item">选项三</a>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-dropdown"&gt;
+  &lt;button class="ui-btn ui-btn-secondary" data-dropdown&gt;点击展开&lt;/button&gt;
+  &lt;div class="ui-dropdown-menu"&gt;
+    &lt;a href="#" class="ui-dropdown-item"&gt;选项一&lt;/a&gt;
+    &lt;a href="#" class="ui-dropdown-item"&gt;选项二&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>类名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>.ui-dropdown</code></td><td>下拉菜单容器</td></tr>
+          <tr><td><code>.ui-dropdown-menu</code></td><td>下拉菜单面板</td></tr>
+          <tr><td><code>.ui-dropdown-item</code></td><td>下拉菜单项</td></tr>
+          <tr><td><code>data-dropdown</code></td><td>触发器属性</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

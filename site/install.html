@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安装方式 - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link active">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>安装方式</h1>
+      <p class="docs-lead">选择适合你项目的安装方式。</p>
+
+      <h2>CDN 引入（推荐）</h2>
+      <pre class="docs-code"><code>&lt;link rel="stylesheet" href="https://unpkg.com/1inui/dist/1in-ui.min.css"&gt;
+&lt;script src="https://unpkg.com/1inui/dist/1in-ui.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://unpkg.com/1inui/dist/1in-icons.min.js"&gt;&lt;/script&gt;</code></pre>
+
+      <h2>npm 安装</h2>
+      <pre class="docs-code"><code>npm install 1inui</code></pre>
+      <pre class="docs-code"><code>// ESM
+import '1inui/dist/1in-ui.min.css'
+import { UI } from '1inui'
+import { Icons } from '1inui/dist/1in-icons.esm.js'</code></pre>
+
+      <h2>文件说明</h2>
+      <table class="docs-table">
+        <thead><tr><th>文件</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>1in-ui.min.css</code></td><td>压缩后的 CSS</td></tr>
+          <tr><td><code>1in-ui.min.js</code></td><td>压缩后的 JS (UMD)</td></tr>
+          <tr><td><code>1in-ui.esm.js</code></td><td>ES Module 格式</td></tr>
+          <tr><td><code>1in-icons.min.js</code></td><td>图标库 (UMD)</td></tr>
+          <tr><td><code>1in-icons.esm.js</code></td><td>图标库 (ESM)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

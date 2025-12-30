@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开关 Switch - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link active">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>开关 Switch</h1>
+      <p class="docs-lead">开关用于切换两种状态。</p>
+
+      <h2>基础开关</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <label class="ui-switch">
+            <input type="checkbox">
+            <div class="ui-switch-track"><div class="ui-switch-thumb"></div></div>
+          </label>
+          <label class="ui-switch">
+            <input type="checkbox" checked>
+            <div class="ui-switch-track"><div class="ui-switch-thumb"></div></div>
+          </label>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;label class="ui-switch"&gt;
+  &lt;input type="checkbox"&gt;
+  &lt;div class="ui-switch-track"&gt;
+    &lt;div class="ui-switch-thumb"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;</code></pre>
+
+      <h2>带标签的开关</h2>
+      <div class="docs-demo">
+        <label class="ui-switch">
+          <input type="checkbox" checked>
+          <div class="ui-switch-track"><div class="ui-switch-thumb"></div></div>
+          <span class="ui-switch-label">启用通知</span>
+        </label>
+      </div>
+      <pre class="docs-code"><code>&lt;label class="ui-switch"&gt;
+  &lt;input type="checkbox" checked&gt;
+  &lt;div class="ui-switch-track"&gt;&lt;div class="ui-switch-thumb"&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;span class="ui-switch-label"&gt;启用通知&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>类名</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>.ui-switch</code></td><td>开关容器</td></tr>
+          <tr><td><code>.ui-switch-track</code></td><td>开关轨道</td></tr>
+          <tr><td><code>.ui-switch-thumb</code></td><td>开关滑块</td></tr>
+          <tr><td><code>.ui-switch-label</code></td><td>开关标签文字</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

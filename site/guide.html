@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>快速开始 - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <script src="../dist/1in-icons.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link active">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>快速开始</h1>
+      <p class="docs-lead">1inUI 是一个 Discord 风格的轻量级组件库，零依赖，开箱即用。</p>
+
+      <h2>特性</h2>
+      <ul class="feature-list">
+        <li><span class="feature-li-icon" data-icon="play"></span> 开箱即用 - CDN 引入即可使用，无需构建工具</li>
+        <li><span class="feature-li-icon" data-icon="sparkles"></span> Discord 风格 - 大圆角、柔和配色、流畅动画</li>
+        <li><span class="feature-li-icon" data-icon="moon"></span> 暗色模式 - 内置暗色模式，一键切换</li>
+        <li><span class="feature-li-icon" data-icon="shield"></span> 零依赖 - 纯原生 CSS + JS</li>
+        <li><span class="feature-li-icon" data-icon="eye"></span> 60+ 图标 - 线性风格 SVG 图标</li>
+        <li><span class="feature-li-icon" data-icon="bolt"></span> 轻量 - CSS 37KB + JS 12KB</li>
+      </ul>
+
+      <h2>CDN 引入</h2>
+      <p>在 HTML 文件的 <code>&lt;head&gt;</code> 中添加：</p>
+      <pre class="docs-code"><code>&lt;!-- CSS --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/1inui/dist/1in-ui.min.css"&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script src="https://unpkg.com/1inui/dist/1in-ui.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- 图标库 (可选) --&gt;
+&lt;script src="https://unpkg.com/1inui/dist/1in-icons.min.js"&gt;&lt;/script&gt;</code></pre>
+
+      <h2>npm 安装</h2>
+      <pre class="docs-code"><code>npm install 1inui</code></pre>
+
+      <h2>第一个按钮</h2>
+      <div class="docs-demo">
+        <button class="ui-btn ui-btn-primary">Hello 1inUI!</button>
+      </div>
+      <pre class="docs-code"><code>&lt;button class="ui-btn ui-btn-primary"&gt;Hello 1inUI!&lt;/button&gt;</code></pre>
+
+      <h2>暗色模式</h2>
+      <div class="docs-demo">
+        <button class="ui-btn ui-btn-secondary" onclick="UI.theme.toggle()">切换主题</button>
+      </div>
+      <pre class="docs-code"><code>// 切换主题
+UI.theme.toggle()
+
+// 设置主题
+UI.theme.set('dark')  // 暗色
+UI.theme.set('light') // 亮色</code></pre>
+    </div>
+  </main>
+</body>
+</html>

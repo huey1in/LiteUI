@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图标 Icons - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <script src="../dist/1in-icons.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+  <style>
+    .icon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.75rem; }
+    .icon-item { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1rem; border-radius: 0.5rem; background: var(--ui-bg); cursor: pointer; transition: all 0.15s; }
+    .icon-item:hover { background: var(--ui-primary); color: white; }
+    .icon-item svg { width: 24px; height: 24px; }
+    .icon-item span { font-size: 0.625rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link active">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>图标 Icons</h1>
+      <p class="docs-lead">1inUI 内置 60+ 线性风格 SVG 图标。点击图标复制名称。</p>
+
+      <h2>图标列表</h2>
+      <div class="docs-demo">
+        <div class="icon-grid" id="iconGrid"></div>
+      </div>
+
+      <h2>使用方法</h2>
+      <pre class="docs-code"><code>&lt;script src="https://unpkg.com/1inui/dist/1in-icons.min.js"&gt;&lt;/script&gt;
+
+// 使用图标
+document.getElementById('icon').innerHTML = Icons.user</code></pre>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('iconGrid');
+      for (const [name, svg] of Object.entries(Icons)) {
+        const item = document.createElement('div');
+        item.className = 'icon-item';
+        item.innerHTML = svg + '<span>' + name + '</span>';
+        item.onclick = () => { navigator.clipboard.writeText(name); UI.toast.success('已复制: ' + name); };
+        grid.appendChild(item);
+      }
+    });
+  </script>
+</body>
+</html>

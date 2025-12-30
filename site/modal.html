@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模态框 Modal - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link active">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>模态框 Modal</h1>
+      <p class="docs-lead">模态框用于展示重要内容或需要用户确认的操作。</p>
+
+      <h2>基础模态框</h2>
+      <div class="docs-demo">
+        <button class="ui-btn ui-btn-primary" onclick="UI.modal.open({ title: '提示', content: '这是一个基础模态框' })">打开模态框</button>
+      </div>
+      <pre class="docs-code"><code>UI.modal.open({
+  title: '提示',
+  content: '这是一个基础模态框'
+})</code></pre>
+
+      <h2>确认对话框</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <button class="ui-btn ui-btn-secondary" onclick="handleConfirm()">确认对话框</button>
+          <button class="ui-btn ui-btn-danger" onclick="handleDanger()">危险操作</button>
+        </div>
+      </div>
+      <pre class="docs-code"><code>const result = await UI.modal.confirm({
+  title: '确认操作',
+  content: '确定要执行此操作吗？'
+})
+
+// 危险操作
+await UI.modal.confirm({
+  title: '删除确认',
+  content: '此操作不可恢复',
+  danger: true
+})</code></pre>
+
+      <h2>API</h2>
+      <table class="docs-table">
+        <thead><tr><th>方法</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>UI.modal.open(options)</code></td><td>打开模态框</td></tr>
+          <tr><td><code>UI.modal.close()</code></td><td>关闭模态框</td></tr>
+          <tr><td><code>UI.modal.confirm(options)</code></td><td>确认对话框</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    async function handleConfirm() {
+      const result = await UI.modal.confirm({ title: '确认操作', content: '确定要执行此操作吗？' });
+      if (result) UI.toast.success('已确认');
+    }
+    async function handleDanger() {
+      const result = await UI.modal.confirm({ title: '删除确认', content: '此操作不可恢复', danger: true, confirmText: '删除' });
+      if (result) UI.toast.success('已删除');
+    }
+  </script>
+</body>
+</html>

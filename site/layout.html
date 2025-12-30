@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>布局工具类 - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link active">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>布局工具类</h1>
+      <p class="docs-lead">使用工具类快速构建页面布局。</p>
+
+      <h2>Flex 布局</h2>
+      <pre class="docs-code"><code>.ui-flex          /* display: flex */
+.ui-flex-col      /* flex-direction: column */
+.ui-items-center  /* align-items: center */
+.ui-justify-center /* justify-content: center */
+.ui-justify-between /* justify-content: space-between */</code></pre>
+
+      <h2>间距</h2>
+      <pre class="docs-code"><code>.ui-gap-2  /* gap: 0.5rem */
+.ui-gap-3  /* gap: 0.75rem */
+.ui-gap-4  /* gap: 1rem */
+.ui-gap-6  /* gap: 1.5rem */
+
+.ui-mt-4   /* margin-top: 1rem */
+.ui-mb-4   /* margin-bottom: 1rem */
+.ui-space-y-4  /* 子元素垂直间距 1rem */</code></pre>
+
+      <h2>文字</h2>
+      <pre class="docs-code"><code>.ui-text-center  /* text-align: center */
+.ui-text-sm      /* font-size: 0.875rem */
+.ui-text-xs      /* font-size: 0.75rem */
+.ui-text-muted   /* color: var(--ui-text-muted) */
+.ui-font-bold    /* font-weight: 700 */</code></pre>
+
+      <h2>宽度</h2>
+      <pre class="docs-code"><code>.ui-w-full  /* width: 100% */</code></pre>
+
+      <h2>显示隐藏</h2>
+      <pre class="docs-code"><code>.ui-hidden        /* display: none */
+.ui-hide-mobile   /* 移动端隐藏 */
+.ui-hide-desktop  /* 桌面端隐藏 */</code></pre>
+    </div>
+  </main>
+</body>
+</html>

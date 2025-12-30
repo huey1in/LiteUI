@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1inUI - 轻量级前端组件库</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/1inui/dist/1in-ui.min.css">
+  <script src="https://unpkg.com/1inui/dist/1in-ui.min.js" defer></script>
+  <script src="https://unpkg.com/1inui/dist/1in-icons.min.js" defer></script>
+
+  <style>
+    /* 仅保留少量自定义样式用于增强 Hero 区域的层级感 */
+    .hero-visual {
+      position: relative;
+      /* 给视觉区域一点透视感 */
+      perspective: 1000px; 
+    }
+    
+    .float-card-1 {
+      /* 模拟主卡片 */
+      position: relative;
+      z-index: 10;
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    .float-card-2 {
+      /* 模拟背景装饰卡片 */
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      z-index: 5;
+      opacity: 0.6;
+      transform: rotate(5deg);
+      animation: floatDelayed 7s ease-in-out infinite;
+    }
+
+    /* 简单的浮动动画 */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatDelayed {
+      0%, 100% { transform: rotate(5deg) translateY(0); }
+      50% { transform: rotate(5deg) translateY(-8px); }
+    }
+
+    /* 品牌色文字 */
+    .text-brand { color: #6366f1; }
+  </style>
+</head>
+<body class="ui-base">
+
+  <!-- 导航栏 -->
+  <nav class="ui-navbar">
+    <div class="ui-navbar-inner">
+      <a href="#" class="ui-navbar-brand">
+        <span class="ui-text-2xl ui-font-black text-brand">1inUI</span>
+      </a>
+      <div class="ui-nav-pills ui-hide-mobile">
+        <a href="guide.html" class="ui-nav-link">指南</a>
+        <a href="components.html" class="ui-nav-link active">组件</a>
+        <div class="ui-divider-v"></div>
+        <a href="https://github.com" target="_blank" class="ui-btn ui-btn-ghost ui-p-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.597 1.028 2.688 0 3.848-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 全新设计的 Hero 区域 -->
+  <!-- 使用 ui-bg-gradient 提供柔和背景，ui-section-lg 增加上下间距 -->
+  <section class="ui-section-lg ui-bg-gradient ui-overflow-hidden">
+    <div class="ui-container">
+      <div class="ui-grid ui-grid-2 ui-items-center ui-gap-12">
+        
+        <!-- 左侧：文案区域 -->
+        <div class="ui-text-left ui-space-y-6">
+          
+          <!-- 标题 -->
+          <h1 class="ui-text-5xl ui-font-black ui-text-dark ui-leading-tight">
+            <span class="text-brand">1inUI</span>
+          </h1>
+          
+          <!-- 描述 -->
+          <p class="ui-text-lg ui-text-muted ui-leading-relaxed ui-max-w-lg">
+            <b>12KB JS</b>，<b>零依赖</b>，原生支持深色模式。
+            无需复杂的构建工具链，只需一个 CDN 链接。
+          </p>
+          
+          <!-- 按钮组 -->
+          <div class="ui-flex ui-items-center ui-gap-4 ui-flex-wrap ui-mt-8">
+            <a href="guide.html" class="ui-btn ui-btn-primary ui-btn-lg ui-shadow-lg ui-hover-lift">
+              开始使用
+              <svg class="ui-ml-2" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            
+            <div class="ui-text-sm ui-text-muted ui-flex ui-items-center ui-gap-2">
+              <span class="ui-font-bold">npm install 1inui</span>
+              <button class="ui-btn-icon ui-btn-ghost" onclick="navigator.clipboard.writeText('npm install 1inui').then(() => UI.toast.show('已复制到剪贴板', 'success'))" title="复制">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧：视觉演示区域 (仅桌面端显示) -->
+        <div class="ui-hide-mobile hero-visual">
+          
+          <!-- 装饰背景卡片 -->
+          <div class="float-card-2 ui-card ui-w-full ui-h-full ui-bg-white ui-shadow-none ui-border-2 ui-border-dashed"></div>
+
+          <!-- 主演示卡片：直接使用 1inUI 的组件构建一个“登录框”样式 -->
+          <div class="float-card-1 ui-card ui-shadow-xl ui-bg-white ui-border ui-p-8">
+            <div class="ui-flex ui-items-center ui-gap-4 ui-mb-6">
+              <div class="ui-avatar ui-avatar-lg ui-bg-primary-light ui-text-primary">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+              <div>
+                <h3 class="ui-text-lg ui-font-bold ui-text-dark ui-m-0">欢迎回来</h3>
+                <p class="ui-text-xs ui-text-muted ui-m-0">使用 1inUI 组件构建</p>
+              </div>
+            </div>
+
+            <div class="ui-space-y-4">
+              <div class="ui-form-group">
+                <label class="ui-label">账号</label>
+                <div class="ui-input-group">
+                  <div class="ui-input-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  </div>
+                  <input type="text" class="ui-input" placeholder="user@example.com">
+                </div>
+              </div>
+
+              <div class="ui-form-group">
+                <label class="ui-label">密码</label>
+                <div class="ui-input-group">
+                  <div class="ui-input-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3 3.1-3s3.1 1.29 3.1 3v2z"/></svg>
+                  </div>
+                  <input type="password" class="ui-input" placeholder="••••••••">
+                </div>
+              </div>
+
+              <div class="ui-flex ui-justify-between ui-items-center">
+                <label class="ui-checkbox">
+                  <input type="checkbox" checked> 记住我
+                </label>
+                <a href="#" class="ui-link ui-text-xs">忘记密码?</a>
+              </div>
+
+              <button class="ui-btn ui-btn-primary ui-w-full ui-shadow">登录演示</button>
+            </div>
+          </div>
+          <!-- 演示结束 -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特性部分 -->
+  <section class="ui-section">
+    <div class="ui-container">
+      <div class="ui-text-center ui-mb-12">
+        <h2 class="ui-text-3xl ui-font-black ui-text-dark">不仅好看，而且好用</h2>
+        <p class="ui-text-muted ui-mt-2">专为开发者设计的核心特性</p>
+      </div>
+
+      <div class="ui-grid ui-grid-3 ui-gap-8">
+        <div class="ui-card ui-hover-lift ui-transition ui-border">
+          <div class="ui-feature-icon" data-icon="bolt"></div>
+          <h3 class="ui-card-title ui-text-lg">极致轻量</h3>
+          <p class="ui-text-muted ui-text-sm">Gzip 后 JS 仅 12KB。没有冗余代码，加载速度飞快，非常适合移动端页面。</p>
+        </div>
+        <div class="ui-card ui-hover-lift ui-transition ui-border">
+          <div class="ui-feature-icon" data-icon="sparkles"></div>
+          <h3 class="ui-card-title ui-text-lg">现代风格</h3>
+          <p class="ui-text-muted ui-text-sm">精心调配的 Blurple 品牌色与圆角设计，为你的应用带来充满活力的社区感。</p>
+        </div>
+        <div class="ui-card ui-hover-lift ui-transition ui-border">
+          <div class="ui-feature-icon" data-icon="moon"></div>
+          <h3 class="ui-card-title ui-text-lg">深色模式</h3>
+          <p class="ui-text-muted ui-text-sm">内置系统级深色模式支持。只需一个类名切换，即可完美适配夜间浏览。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="ui-footer">
+    <div class="ui-container">
+      <div class="ui-grid ui-grid-4 ui-gap-8 ui-text-left ui-mb-12 ui-hide-mobile">
+        <div>
+          <div class="ui-text-lg ui-font-black ui-mb-4 text-brand">1inUI</div>
+          <p class="ui-text-sm ui-text-muted">构建现代、轻量、美观的 Web 界面。</p>
+        </div>
+        <div>
+          <div class="ui-footer-title">资源</div>
+          <ul class="ui-footer-links">
+            <li><a href="#">使用指南</a></li>
+            <li><a href="#">组件文档</a></li>
+            <li><a href="#">图标库</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="ui-footer-title">社区</div>
+          <ul class="ui-footer-links">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">NPM</a></li>
+            <li><a href="#">更新日志</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="ui-footer-bottom ui-mt-0">
+        <p>Released under the MIT License. Copyright © 2024 1inUI.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 图标加载
+    window.addEventListener('load', function() {
+      if (typeof Icons !== 'undefined') {
+        document.querySelectorAll('[data-icon]').forEach(el => {
+          const name = el.dataset.icon;
+          if (Icons[name]) {
+            el.innerHTML = Icons[name];
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

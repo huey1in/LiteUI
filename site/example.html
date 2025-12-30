@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>示例页面 - 1inUI</title>
+  <link rel="stylesheet" href="../dist/1in-ui.min.css">
+  <script src="../dist/1in-ui.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body>
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link active">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>示例页面</h1>
+      <p class="docs-lead">使用 1inUI 构建的完整页面示例。</p>
+
+      <h2>登录页面</h2>
+      <div class="docs-demo" style="background: var(--ui-bg); padding: 2rem;">
+        <div class="ui-card" style="max-width: 400px; margin: 0 auto;">
+          <h2 class="ui-card-title ui-text-center">登录</h2>
+          <p class="ui-card-subtitle ui-text-center">欢迎回来</p>
+          <div class="ui-form-group">
+            <label class="ui-label">邮箱</label>
+            <input type="email" class="ui-input" placeholder="your@email.com">
+          </div>
+          <div class="ui-form-group">
+            <label class="ui-label">密码</label>
+            <input type="password" class="ui-input" placeholder="••••••••">
+          </div>
+          <button class="ui-btn ui-btn-primary ui-btn-lg ui-w-full">登录</button>
+          <p class="ui-text-center ui-text-sm ui-text-muted" style="margin-top: 1rem;">
+            还没有账号？<a href="#">注册</a>
+          </p>
+        </div>
+      </div>
+
+      <h2>完整代码</h2>
+      <pre class="docs-code"><code>&lt;div class="ui-card"&gt;
+  &lt;h2 class="ui-card-title ui-text-center"&gt;登录&lt;/h2&gt;
+  &lt;div class="ui-form-group"&gt;
+    &lt;label class="ui-label"&gt;邮箱&lt;/label&gt;
+    &lt;input type="email" class="ui-input"&gt;
+  &lt;/div&gt;
+  &lt;div class="ui-form-group"&gt;
+    &lt;label class="ui-label"&gt;密码&lt;/label&gt;
+    &lt;input type="password" class="ui-input"&gt;
+  &lt;/div&gt;
+  &lt;button class="ui-btn ui-btn-primary ui-btn-lg ui-w-full"&gt;登录&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </main>
+</body>
+</html>
