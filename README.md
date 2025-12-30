@@ -2,7 +2,8 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![npm Version](https://img.shields.io/npm/v/1inui?style=flat-square&logo=npm)](https://www.npmjs.com/package/1inui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=1inui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/1inui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-### 你可以预览风格在下面网站
+### 文档: https://ui.yinxh.fun
+### 你可以预览库组件风格在以下网站
 
 - https://1incode.yinxh.fun
 - https://step.yinxh.fun
