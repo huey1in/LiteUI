@@ -256,3 +256,10 @@ body {
   width: 1.25rem;
   height: 1.25rem;
 }
+
+
+/* 侧边栏链接中的 tag 在选中状态下的样式 */
+.docs-nav-link.active .ui-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}

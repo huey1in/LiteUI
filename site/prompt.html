@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>AI Prompt - 1inUI</title>
+  <link rel="stylesheet" href="https://unpkg.com/1inui/dist/1in-ui.min.css">
+  <script src="https://unpkg.com/1inui/dist/1in-ui.min.js" defer></script>
+  <script src="https://unpkg.com/1inui/dist/1in-icons.min.js" defer></script>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar">
+    <div class="docs-logo"><a href="index.html">1inUI</a></div>
+    <nav class="docs-nav">
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">开始</div>
+        <a href="guide.html" class="docs-nav-link">快速开始</a>
+        <a href="install.html" class="docs-nav-link">安装方式</a>
+        <a href="example.html" class="docs-nav-link">示例页面</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">布局</div>
+        <a href="layout.html" class="docs-nav-link">布局工具类</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">基础组件</div>
+        <a href="components.html" class="docs-nav-link">按钮 Button</a>
+        <a href="card.html" class="docs-nav-link">卡片 Card</a>
+        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">表单组件</div>
+        <a href="input.html" class="docs-nav-link">输入框 Input</a>
+        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
+        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">反馈组件</div>
+        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
+        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
+        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
+      </div>
+      <div class="docs-nav-group">
+        <div class="docs-nav-title">其他</div>
+        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
+        <a href="table.html" class="docs-nav-link">表格 Table</a>
+        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
+        <a href="prompt.html" class="docs-nav-link active">AI Prompt <span class="ui-tag ui-tag-primary" style="margin-left:0.5rem;font-size:0.625rem;padding:0.125rem 0.375rem;">Beta</span></a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>AI Prompt <span class="ui-tag ui-tag-primary">Beta</span></h1>
+      <p class="docs-lead">我们理解您可能在使用 AI Agent IDE，为了让您的 AI 更快学会 1inUI 的用法，我们提供了一份精简的 Prompt 文档。</p>
+
+      <h2>获取 Prompt</h2>
+      <div class="docs-demo">
+        <div class="docs-demo-row">
+          <button class="ui-btn ui-btn-primary" onclick="copyPrompt()">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            复制到剪贴板
+          </button>
+          <a href="prompt.md" download="1inui-prompt.md" class="ui-btn ui-btn-secondary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            下载 prompt.md
+          </a>
+          <a href="prompt.md" target="_blank" class="ui-btn ui-btn-ghost">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            在线查看
+          </a>
+        </div>
+      </div>
+
+      <h2>如何使用</h2>
+      <ol>
+        <li><strong>复制或下载 Prompt</strong> - 点击上方按钮获取完整的 Prompt 文档</li>
+        <li><strong>发送给 AI</strong> - 将 Prompt 内容粘贴到 AI 对话中，或上传 .md 文件</li>
+        <li><strong>开始使用</strong> - AI 现在已经了解 1inUI，可以帮你编写组件代码了</li>
+      </ol>
+
+      <h2>示例对话</h2>
+      <p>发送 Prompt 后，你可以这样与 AI 对话：</p>
+      <div class="docs-demo">
+        <div class="ui-callout ui-mb-4">
+          <div class="ui-callout-content">
+            <div class="ui-callout-title">你</div>
+            用 1inUI 帮我写一个登录表单
+          </div>
+        </div>
+        <div class="ui-callout ui-callout-success">
+          <div class="ui-callout-content">
+            <div class="ui-callout-title">AI</div>
+            好的，这是使用 1inUI 组件的登录表单代码...
+          </div>
+        </div>
+      </div>
+      <p>更多示例问题：</p>
+      <ul>
+        <li>帮我用 1inUI 创建一个用户列表页面</li>
+        <li>写一个带 Toast 提示的表单提交功能</li>
+        <li>用 1inUI 的卡片组件展示产品信息</li>
+        <li>创建一个带深色模式切换的导航栏</li>
+      </ul>
+
+      <h2>Prompt 内容预览</h2>
+      <div class="ui-flex ui-justify-end ui-mb-2">
+        <button class="ui-btn ui-btn-ghost ui-text-sm" onclick="copyPrompt()">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          复制
+        </button>
+      </div>
+      <pre class="ui-code-block" id="prompt-preview" style="max-height: 500px; overflow-y: auto;">加载中...</pre>
+    </div>
+  </main>
+
+  <script>
+    fetch('prompt.md')
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById('prompt-preview').textContent = text;
+        window.promptContent = text;
+      })
+      .catch(() => {
+        document.getElementById('prompt-preview').textContent = '加载失败，请刷新页面重试';
+      });
+
+    async function copyPrompt() {
+      const content = window.promptContent;
+      if (!content) {
+        UI.toast.error('内容加载中，请稍后再试');
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(content);
+        UI.toast.success('已复制到剪贴板');
+      } catch (e) {
+        const textarea = document.createElement('textarea');
+        textarea.value = content;
+        textarea.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        UI.toast.success('已复制到剪贴板');
+      }
+    }
+  </script>
+</body>
+</html>
