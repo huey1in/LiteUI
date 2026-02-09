@@ -36,6 +36,9 @@
     "type": "git",
     "url": "https://github.com/huey1in/liteui"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "clean-css": "^5.3.3",
     "terser": "^5.27.0",
