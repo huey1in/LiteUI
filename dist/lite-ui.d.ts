@@ -64,8 +64,5 @@ declare const UI: {
   init(): void;
 };
 
-declare const Icons: Record<string, string>;
-declare function icon(name: string, className?: string): string;
-
-export { UI, Icons, icon };
+export { UI };
 export default UI;

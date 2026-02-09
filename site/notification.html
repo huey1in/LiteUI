@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通知点 Notification - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>通知点 Notification</h1>
+      <p class="docs-lead">用于显示未读消息数量或状态提示。</p>
+
+      <section class="docs-section">
+        <h2>基础用法</h2>
+        <div class="docs-example">
+          <div class="ui-dot">
+            <button class="ui-btn ui-btn-primary">消息</button>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-dot"&gt;
+  &lt;button class="ui-btn ui-btn-primary"&gt;消息&lt;/button&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>显示数字</h2>
+        <div class="docs-example">
+          <div style="position: relative; display: inline-block;">
+            <button class="ui-btn ui-btn-primary">通知</button>
+            <span class="ui-dot-count">5</span>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div style="position: relative; display: inline-block;"&gt;
+  &lt;button class="ui-btn ui-btn-primary"&gt;通知&lt;/button&gt;
+  &lt;span class="ui-dot-count"&gt;5&lt;/span&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>大数字</h2>
+        <div class="docs-example">
+          <div style="position: relative; display: inline-block;">
+            <button class="ui-btn ui-btn-primary">消息</button>
+            <span class="ui-dot-count">99+</span>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div style="position: relative; display: inline-block;"&gt;
+  &lt;button class="ui-btn ui-btn-primary"&gt;消息&lt;/button&gt;
+  &lt;span class="ui-dot-count"&gt;99+&lt;/span&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-dot</code></td>
+              <td>通知点容器，自动显示红点</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-dot-count</code></td>
+              <td>带数字的通知徽章</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

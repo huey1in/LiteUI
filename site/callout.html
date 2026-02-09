@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>提示框 Callout - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>提示框 Callout</h1>
+      <p class="docs-lead">用于显示重要提示信息的容器组件。</p>
+
+      <section class="docs-section">
+        <h2>基础用法</h2>
+        <div class="docs-example">
+          <div class="ui-callout">
+            <div class="ui-callout-content">
+              <div class="ui-callout-title">提示</div>
+              这是一条普通的提示信息。
+            </div>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-callout"&gt;
+  &lt;div class="ui-callout-content"&gt;
+    &lt;div class="ui-callout-title"&gt;提示&lt;/div&gt;
+    这是一条普通的提示信息。
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>不同类型</h2>
+        <div class="docs-example">
+          <div class="ui-space-y-4">
+            <div class="ui-callout ui-callout-warning">
+              <div class="ui-callout-content">
+                <div class="ui-callout-title">警告</div>
+                这是一条警告信息，请注意查看。
+              </div>
+            </div>
+
+            <div class="ui-callout ui-callout-error">
+              <div class="ui-callout-content">
+                <div class="ui-callout-title">错误</div>
+                这是一条错误信息，操作失败。
+              </div>
+            </div>
+
+            <div class="ui-callout ui-callout-success">
+              <div class="ui-callout-content">
+                <div class="ui-callout-title">成功</div>
+                操作已成功完成。
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-callout ui-callout-warning"&gt;
+  &lt;div class="ui-callout-content"&gt;
+    &lt;div class="ui-callout-title"&gt;警告&lt;/div&gt;
+    这是一条警告信息，请注意查看。
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-callout</code></td>
+              <td>提示框容器</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-callout-content</code></td>
+              <td>提示框内容</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-callout-title</code></td>
+              <td>提示框标题</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-callout-warning</code></td>
+              <td>警告样式</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-callout-error</code></td>
+              <td>错误样式</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-callout-success</code></td>
+              <td>成功样式</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

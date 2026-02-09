@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>键盘按键 Keyboard - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>键盘按键 Keyboard</h1>
+      <p class="docs-lead">用于显示键盘快捷键或按键提示。</p>
+
+      <section class="docs-section">
+        <h2>基础用法</h2>
+        <div class="docs-example">
+          <p>按 <kbd class="ui-kbd">Ctrl</kbd> + <kbd class="ui-kbd">C</kbd> 复制</p>
+          <p>按 <kbd class="ui-kbd">Ctrl</kbd> + <kbd class="ui-kbd">V</kbd> 粘贴</p>
+          <p>按 <kbd class="ui-kbd">Esc</kbd> 退出</p>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;p&gt;按 &lt;kbd class="ui-kbd"&gt;Ctrl&lt;/kbd&gt; + &lt;kbd class="ui-kbd"&gt;C&lt;/kbd&gt; 复制&lt;/p&gt;
+&lt;p&gt;按 &lt;kbd class="ui-kbd"&gt;Ctrl&lt;/kbd&gt; + &lt;kbd class="ui-kbd"&gt;V&lt;/kbd&gt; 粘贴&lt;/p&gt;
+&lt;p&gt;按 &lt;kbd class="ui-kbd"&gt;Esc&lt;/kbd&gt; 退出&lt;/p&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>常用快捷键</h2>
+        <div class="docs-example">
+          <div class="ui-space-y-4">
+            <div class="ui-flex ui-items-center ui-gap-4">
+              <div style="min-width: 120px;">
+                <kbd class="ui-kbd">⌘</kbd> + <kbd class="ui-kbd">K</kbd>
+              </div>
+              <span class="ui-text-muted">打开命令面板</span>
+            </div>
+            <div class="ui-flex ui-items-center ui-gap-4">
+              <div style="min-width: 120px;">
+                <kbd class="ui-kbd">⌘</kbd> + <kbd class="ui-kbd">S</kbd>
+              </div>
+              <span class="ui-text-muted">保存文件</span>
+            </div>
+            <div class="ui-flex ui-items-center ui-gap-4">
+              <div style="min-width: 120px;">
+                <kbd class="ui-kbd">⌘</kbd> + <kbd class="ui-kbd">Z</kbd>
+              </div>
+              <span class="ui-text-muted">撤销操作</span>
+            </div>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-flex ui-items-center ui-gap-4"&gt;
+  &lt;div&gt;
+    &lt;kbd class="ui-kbd"&gt;⌘&lt;/kbd&gt; + &lt;kbd class="ui-kbd"&gt;K&lt;/kbd&gt;
+  &lt;/div&gt;
+  &lt;span class="ui-text-muted"&gt;打开命令面板&lt;/span&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-kbd</code></td>
+              <td>键盘按键样式</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

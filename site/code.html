@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>代码块 Code - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>代码块 Code</h1>
+      <p class="docs-lead">用于展示代码片段和技术文档。</p>
+
+      <h2>行内代码</h2>
+      <div class="docs-demo">
+        <p>使用 <code class="ui-code">npm install</code> 命令安装依赖包。</p>
+        <p>变量 <code class="ui-code">const name = 'LiteUI'</code> 定义了项目名称。</p>
+      </div>
+      <pre class="docs-code"><code>&lt;p&gt;使用 &lt;code class="ui-code"&gt;npm install&lt;/code&gt; 命令安装依赖包。&lt;/p&gt;</code></pre>
+
+      <h2>代码块</h2>
+      <div class="docs-demo">
+        <div class="ui-code-block">function hello() {
+  console.log('Hello LiteUI!');
+}</div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-code-block"&gt;function hello() {
+  console.log('Hello LiteUI!');
+}&lt;/div&gt;</code></pre>
+
+      <h2>带语言标签</h2>
+      <div class="docs-demo">
+        <div class="ui-code-block" data-lang="javascript">const UI = {
+  version: '1.0.0',
+  toast: {
+    success(msg) {
+      console.log(msg);
+    }
+  }
+};</div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-code-block" data-lang="javascript"&gt;
+const UI = {
+  version: '1.0.0',
+  toast: {
+    success(msg) {
+      console.log(msg);
+    }
+  }
+};
+&lt;/div&gt;</code></pre>
+
+      <h2>浅色主题</h2>
+      <div class="docs-demo">
+        <div class="ui-code-block light" data-lang="html">&lt;div class="ui-card"&gt;
+  &lt;h3 class="ui-card-title"&gt;标题&lt;/h3&gt;
+  &lt;p&gt;内容&lt;/p&gt;
+&lt;/div&gt;</div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-code-block light" data-lang="html"&gt;
+&lt;div class="ui-card"&gt;
+  &lt;h3 class="ui-card-title"&gt;标题&lt;/h3&gt;
+  &lt;p&gt;内容&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>多语言示例</h2>
+      <div class="docs-demo">
+        <div class="ui-space-y-4">
+          <div class="ui-code-block" data-lang="css">.ui-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}</div>
+          
+          <div class="ui-code-block" data-lang="bash">npm install @1ing/liteui
+npm run build</div>
+          
+          <div class="ui-code-block" data-lang="json">{
+  "name": "@1ing/liteui",
+  "version": "1.0.0",
+  "main": "dist/lite-ui.js"
+}</div>
+        </div>
+      </div>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-code</code></td>
+            <td>行内代码样式</td>
+          </tr>
+          <tr>
+            <td><code>.ui-code-block</code></td>
+            <td>代码块样式</td>
+          </tr>
+          <tr>
+            <td><code>.ui-code-block.light</code></td>
+            <td>浅色主题代码块</td>
+          </tr>
+          <tr>
+            <td><code>data-lang="语言"</code></td>
+            <td>显示语言标签（如 javascript、html、css）</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>使用建议</h2>
+      <div class="ui-callout ui-callout-info">
+        <div class="ui-callout-content">
+          <div class="ui-callout-title">提示</div>
+          代码块会自动处理横向滚动，适合展示较长的代码。建议配合语法高亮库使用以获得更好的显示效果。
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

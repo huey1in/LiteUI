@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>分隔线 Divider - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>分隔线 Divider</h1>
+      <p class="docs-lead">用于分隔内容的水平或垂直线条。</p>
+
+      <h2>水平分隔线</h2>
+      <div class="docs-demo">
+        <p>上方内容</p>
+        <div class="ui-divider"></div>
+        <p>下方内容</p>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-divider"&gt;&lt;/div&gt;</code></pre>
+
+      <h2>带文字的分隔线</h2>
+      <div class="docs-demo">
+        <p>上方内容</p>
+        <div class="ui-divider">或者</div>
+        <p>下方内容</p>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-divider"&gt;或者&lt;/div&gt;</code></pre>
+
+      <h2>垂直分隔线</h2>
+      <div class="docs-demo">
+        <div class="ui-flex ui-items-center ui-gap-4">
+          <span>选项 A</span>
+          <div class="ui-divider-v"></div>
+          <span>选项 B</span>
+          <div class="ui-divider-v"></div>
+          <span>选项 C</span>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-flex ui-items-center ui-gap-4"&gt;
+  &lt;span&gt;选项 A&lt;/span&gt;
+  &lt;div class="ui-divider-v"&gt;&lt;/div&gt;
+  &lt;span&gt;选项 B&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>在卡片中使用</h2>
+      <div class="docs-demo">
+        <div class="ui-card">
+          <h3 class="ui-card-title">卡片标题</h3>
+          <div class="ui-divider"></div>
+          <p>卡片内容区域</p>
+          <div class="ui-divider"></div>
+          <div class="ui-flex ui-gap-2">
+            <button class="ui-btn ui-btn-primary">确定</button>
+            <button class="ui-btn ui-btn-ghost">取消</button>
+          </div>
+        </div>
+      </div>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-divider</code></td>
+            <td>水平分隔线</td>
+          </tr>
+          <tr>
+            <td><code>.ui-divider-v</code></td>
+            <td>垂直分隔线</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

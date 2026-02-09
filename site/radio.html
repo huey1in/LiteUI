@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单选框 Radio - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>单选框 Radio</h1>
+      <p class="docs-lead">在一组选项中选择单个选项。</p>
+
+      <section class="docs-section">
+        <h2>基础用法</h2>
+        <div class="docs-example">
+          <div class="ui-radio-group">
+            <label class="ui-radio">
+              <input type="radio" name="option1" checked>
+              <span class="ui-radio-mark"></span>
+              选项 1
+            </label>
+            <label class="ui-radio">
+              <input type="radio" name="option1">
+              <span class="ui-radio-mark"></span>
+              选项 2
+            </label>
+            <label class="ui-radio">
+              <input type="radio" name="option1">
+              <span class="ui-radio-mark"></span>
+              选项 3
+            </label>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-radio-group"&gt;
+  &lt;label class="ui-radio"&gt;
+    &lt;input type="radio" name="option1" checked&gt;
+    &lt;span class="ui-radio-mark"&gt;&lt;/span&gt;
+    选项 1
+  &lt;/label&gt;
+  &lt;label class="ui-radio"&gt;
+    &lt;input type="radio" name="option1"&gt;
+    &lt;span class="ui-radio-mark"&gt;&lt;/span&gt;
+    选项 2
+  &lt;/label&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>横向排列</h2>
+        <div class="docs-example">
+          <div class="ui-radio-group horizontal">
+            <label class="ui-radio">
+              <input type="radio" name="option2" checked>
+              <span class="ui-radio-mark"></span>
+              男
+            </label>
+            <label class="ui-radio">
+              <input type="radio" name="option2">
+              <span class="ui-radio-mark"></span>
+              女
+            </label>
+            <label class="ui-radio">
+              <input type="radio" name="option2">
+              <span class="ui-radio-mark"></span>
+              其他
+            </label>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-radio-group horizontal"&gt;
+  &lt;label class="ui-radio"&gt;
+    &lt;input type="radio" name="option2" checked&gt;
+    &lt;span class="ui-radio-mark"&gt;&lt;/span&gt;
+    男
+  &lt;/label&gt;
+  &lt;label class="ui-radio"&gt;
+    &lt;input type="radio" name="option2"&gt;
+    &lt;span class="ui-radio-mark"&gt;&lt;/span&gt;
+    女
+  &lt;/label&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-radio-group</code></td>
+              <td>单选框组容器</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-radio-group.horizontal</code></td>
+              <td>横向排列</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-radio</code></td>
+              <td>单选框项</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-radio-mark</code></td>
+              <td>单选框标记</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

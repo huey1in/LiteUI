@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工具提示 Tooltip - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>工具提示 Tooltip</h1>
+      <p class="docs-lead">简单的文字提示气泡框，鼠标悬停时显示。</p>
+
+      <section class="docs-section">
+        <h2>基础用法</h2>
+        <div class="docs-example">
+          <div class="ui-tooltip">
+            <button class="ui-btn ui-btn-primary">悬停查看提示</button>
+            <div class="ui-tooltip-content">这是一个提示信息</div>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-tooltip"&gt;
+  &lt;button class="ui-btn ui-btn-primary"&gt;悬停查看提示&lt;/button&gt;
+  &lt;div class="ui-tooltip-content"&gt;这是一个提示信息&lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>底部提示</h2>
+        <div class="docs-example">
+          <div class="ui-tooltip ui-tooltip-bottom">
+            <button class="ui-btn ui-btn-secondary">底部提示</button>
+            <div class="ui-tooltip-content">提示显示在底部</div>
+          </div>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;div class="ui-tooltip ui-tooltip-bottom"&gt;
+  &lt;button class="ui-btn ui-btn-secondary"&gt;底部提示&lt;/button&gt;
+  &lt;div class="ui-tooltip-content"&gt;提示显示在底部&lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-tooltip</code></td>
+              <td>工具提示容器</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-tooltip-content</code></td>
+              <td>提示内容</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-tooltip-bottom</code></td>
+              <td>底部显示</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>进度条 Progress - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>进度条 Progress</h1>
+      <p class="docs-lead">用于展示操作进度。</p>
+
+      <h2>基础用法</h2>
+      <div class="docs-demo">
+        <div class="ui-progress">
+          <div class="ui-progress-bar" style="width: 60%;"></div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-progress"&gt;
+  &lt;div class="ui-progress-bar" style="width: 60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>不同状态</h2>
+      <div class="docs-demo">
+        <div class="ui-space-y-4">
+          <div>
+            <div class="ui-text-sm ui-text-muted ui-mb-2">默认</div>
+            <div class="ui-progress">
+              <div class="ui-progress-bar" style="width: 45%;"></div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="ui-text-sm ui-text-muted ui-mb-2">成功</div>
+            <div class="ui-progress">
+              <div class="ui-progress-bar success" style="width: 100%;"></div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="ui-text-sm ui-text-muted ui-mb-2">警告</div>
+            <div class="ui-progress">
+              <div class="ui-progress-bar warning" style="width: 75%;"></div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="ui-text-sm ui-text-muted ui-mb-2">错误</div>
+            <div class="ui-progress">
+              <div class="ui-progress-bar error" style="width: 30%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-progress-bar success" style="width: 100%;"&gt;&lt;/div&gt;
+&lt;div class="ui-progress-bar warning" style="width: 75%;"&gt;&lt;/div&gt;
+&lt;div class="ui-progress-bar error" style="width: 30%;"&gt;&lt;/div&gt;</code></pre>
+
+      <h2>带百分比</h2>
+      <div class="docs-demo">
+        <div class="ui-space-y-4">
+          <div>
+            <div class="ui-flex ui-justify-between ui-mb-2">
+              <span class="ui-text-sm ui-font-bold">上传进度</span>
+              <span class="ui-text-sm ui-text-muted">65%</span>
+            </div>
+            <div class="ui-progress">
+              <div class="ui-progress-bar" style="width: 65%;"></div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="ui-flex ui-justify-between ui-mb-2">
+              <span class="ui-text-sm ui-font-bold">下载进度</span>
+              <span class="ui-text-sm ui-text-muted">90%</span>
+            </div>
+            <div class="ui-progress">
+              <div class="ui-progress-bar success" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>在卡片中使用</h2>
+      <div class="docs-demo">
+        <div class="ui-card">
+          <h3 class="ui-card-title">项目进度</h3>
+          <div class="ui-space-y-4 ui-mt-4">
+            <div>
+              <div class="ui-flex ui-justify-between ui-mb-2">
+                <span class="ui-text-sm">前端开发</span>
+                <span class="ui-text-sm ui-text-primary ui-font-bold">85%</span>
+              </div>
+              <div class="ui-progress">
+                <div class="ui-progress-bar" style="width: 85%;"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="ui-flex ui-justify-between ui-mb-2">
+                <span class="ui-text-sm">后端开发</span>
+                <span class="ui-text-sm ui-text-primary ui-font-bold">70%</span>
+              </div>
+              <div class="ui-progress">
+                <div class="ui-progress-bar" style="width: 70%;"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="ui-flex ui-justify-between ui-mb-2">
+                <span class="ui-text-sm">测试</span>
+                <span class="ui-text-sm ui-text-primary ui-font-bold">40%</span>
+              </div>
+              <div class="ui-progress">
+                <div class="ui-progress-bar warning" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-progress</code></td>
+            <td>进度条容器</td>
+          </tr>
+          <tr>
+            <td><code>.ui-progress-bar</code></td>
+            <td>进度条</td>
+          </tr>
+          <tr>
+            <td><code>.ui-progress-bar.success</code></td>
+            <td>成功状态</td>
+          </tr>
+          <tr>
+            <td><code>.ui-progress-bar.warning</code></td>
+            <td>警告状态</td>
+          </tr>
+          <tr>
+            <td><code>.ui-progress-bar.error</code></td>
+            <td>错误状态</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

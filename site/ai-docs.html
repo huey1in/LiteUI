@@ -1,57 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>AI 文档 - LiteUI</title>
-  <link rel="stylesheet" href="https://unpkg.com/@1ing/liteui/dist/lite-ui.min.css">
-  <script src="https://unpkg.com/@1ing/liteui/dist/lite-ui.min.js" defer></script>
-  <script src="https://unpkg.com/@1ing/liteui/dist/lite-icons.min.js" defer></script>
   <link rel="stylesheet" href="docs.css">
   <script src="docs.js" defer></script>
 </head>
 <body class="ui-base">
-  <aside class="docs-sidebar">
-    <div class="docs-logo"><a href="index.html">LiteUI</a></div>
-    <nav class="docs-nav">
-      <div class="docs-nav-group">
-        <div class="docs-nav-title">开始</div>
-        <a href="guide.html" class="docs-nav-link">快速开始</a>
-        <a href="install.html" class="docs-nav-link">安装方式</a>
-        <a href="example.html" class="docs-nav-link">示例页面</a>
-      </div>
-      <div class="docs-nav-group">
-        <div class="docs-nav-title">布局</div>
-        <a href="layout.html" class="docs-nav-link">布局工具类</a>
-      </div>
-      <div class="docs-nav-group">
-        <div class="docs-nav-title">基础组件</div>
-        <a href="components.html" class="docs-nav-link">按钮 Button</a>
-        <a href="card.html" class="docs-nav-link">卡片 Card</a>
-        <a href="badge.html" class="docs-nav-link">徽章 Badge</a>
-      </div>
-      <div class="docs-nav-group">
-        <div class="docs-nav-title">表单组件</div>
-        <a href="input.html" class="docs-nav-link">输入框 Input</a>
-        <a href="switch.html" class="docs-nav-link">开关 Switch</a>
-        <a href="dropdown.html" class="docs-nav-link">下拉菜单 Dropdown</a>
-      </div>
-      <div class="docs-nav-group">
-        <div class="docs-nav-title">反馈组件</div>
-        <a href="alert.html" class="docs-nav-link">提示 Alert</a>
-        <a href="toast.html" class="docs-nav-link">轻提示 Toast</a>
-        <a href="modal.html" class="docs-nav-link">模态框 Modal</a>
-      </div>
-      <div class="docs-nav-group">
-        <div class="docs-nav-title">其他</div>
-        <a href="avatar.html" class="docs-nav-link">头像 Avatar</a>
-        <a href="table.html" class="docs-nav-link">表格 Table</a>
-        <a href="icons.html" class="docs-nav-link">图标 Icons</a>
-        <a href="ai-docs.html" class="docs-nav-link active">AI 文档</a>
-      </div>
-    </nav>
-  </aside>
+  <aside class="docs-sidebar"></aside>
 
   <main class="docs-main">
     <div class="docs-content">
@@ -69,12 +27,7 @@
       
       <h3>方式一：提供文档网址</h3>
       <p>适用于 Cursor、Claude、ChatGPT 等支持网页访问的 AI 工具</p>
-      <div class="ui-code-block ui-mb-4" style="display:flex;align-items:center;justify-content:space-between;">
-        <span>https://LiteUI.com</span>
-        <button class="ui-btn-icon ui-btn-ghost" onclick="copyUrl()" style="margin-left:1rem;" title="复制">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-        </button>
-      </div>
+      <div class="ui-code-block ui-mb-4">https://LiteUI.com</div>
       
       <div class="ui-callout ui-callout-info ui-mb-6">
         <div class="ui-callout-content">
@@ -89,12 +42,7 @@
 
       <h3>方式二：提供 Sitemap</h3>
       <p>如果 AI 工具需要完整的页面索引</p>
-      <div class="ui-code-block ui-mb-4" style="display:flex;align-items:center;justify-content:space-between;">
-        <span>https://LiteUI.com/sitemap.xml</span>
-        <button class="ui-btn-icon ui-btn-ghost" onclick="copySitemap()" style="margin-left:1rem;" title="复制">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-        </button>
-      </div>
+      <div class="ui-code-block ui-mb-4">https://LiteUI.com/sitemap.xml</div>
 
       <h3 class="ui-mt-6">方式三：使用精简文档</h3>
       <p>如果 AI 工具不支持网页访问，可以直接复制或下载文档</p>
@@ -112,23 +60,13 @@
         <div class="ui-card">
           <h3 class="ui-card-title ui-text-lg">完整文档</h3>
           <p class="ui-text-sm ui-text-muted ui-mb-4">包含所有组件的详细说明和示例</p>
-          <div class="ui-code-block ui-text-xs" style="display:flex;align-items:center;justify-content:space-between;">
-            <span>https://LiteUI.com</span>
-            <button class="ui-btn-icon ui-btn-ghost" onclick="copyUrl()" title="复制" style="margin-left:0.5rem;">
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-            </button>
-          </div>
+          <div class="ui-code-block ui-text-xs">https://LiteUI.com</div>
         </div>
         
         <div class="ui-card">
           <h3 class="ui-card-title ui-text-lg">Sitemap</h3>
           <p class="ui-text-sm ui-text-muted ui-mb-4">所有文档页面的索引列表</p>
-          <div class="ui-code-block ui-text-xs" style="display:flex;align-items:center;justify-content:space-between;">
-            <span>https://LiteUI.com/sitemap.xml</span>
-            <button class="ui-btn-icon ui-btn-ghost" onclick="copySitemap()" title="复制" style="margin-left:0.5rem;">
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-            </button>
-          </div>
+          <div class="ui-code-block ui-text-xs">https://LiteUI.com/sitemap.xml</div>
         </div>
         
         <div class="ui-card">
@@ -143,12 +81,7 @@
         <div class="ui-card">
           <h3 class="ui-card-title ui-text-lg">robots.txt</h3>
           <p class="ui-text-sm ui-text-muted ui-mb-4">AI 爬虫访问规则</p>
-          <div class="ui-code-block ui-text-xs" style="display:flex;align-items:center;justify-content:space-between;">
-            <span>https://LiteUI.com/robots.txt</span>
-            <button class="ui-btn-icon ui-btn-ghost" onclick="copyRobots()" title="复制" style="margin-left:0.5rem;">
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-            </button>
-          </div>
+          <div class="ui-code-block ui-text-xs">https://LiteUI.com/robots.txt</div>
         </div>
       </div>
 

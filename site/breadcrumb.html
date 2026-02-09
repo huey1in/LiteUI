@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>面包屑 Breadcrumb - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>面包屑 Breadcrumb</h1>
+      <p class="docs-lead">显示当前页面在系统层级结构中的位置，并能向上返回。</p>
+
+      <section class="docs-section">
+        <h2>基础用法</h2>
+        <div class="docs-example">
+          <nav class="ui-breadcrumb">
+            <a href="#" class="ui-breadcrumb-item">首页</a>
+            <span class="ui-breadcrumb-sep">/</span>
+            <a href="#" class="ui-breadcrumb-item">产品</a>
+            <span class="ui-breadcrumb-sep">/</span>
+            <span class="ui-breadcrumb-item active">详情</span>
+          </nav>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;nav class="ui-breadcrumb"&gt;
+  &lt;a href="#" class="ui-breadcrumb-item"&gt;首页&lt;/a&gt;
+  &lt;span class="ui-breadcrumb-sep"&gt;/&lt;/span&gt;
+  &lt;a href="#" class="ui-breadcrumb-item"&gt;产品&lt;/a&gt;
+  &lt;span class="ui-breadcrumb-sep"&gt;/&lt;/span&gt;
+  &lt;span class="ui-breadcrumb-item active"&gt;详情&lt;/span&gt;
+&lt;/nav&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>自定义分隔符</h2>
+        <div class="docs-example">
+          <nav class="ui-breadcrumb">
+            <a href="#" class="ui-breadcrumb-item">首页</a>
+            <span class="ui-breadcrumb-sep">›</span>
+            <a href="#" class="ui-breadcrumb-item">文档</a>
+            <span class="ui-breadcrumb-sep">›</span>
+            <span class="ui-breadcrumb-item active">组件</span>
+          </nav>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;nav class="ui-breadcrumb"&gt;
+  &lt;a href="#" class="ui-breadcrumb-item"&gt;首页&lt;/a&gt;
+  &lt;span class="ui-breadcrumb-sep"&gt;›&lt;/span&gt;
+  &lt;a href="#" class="ui-breadcrumb-item"&gt;文档&lt;/a&gt;
+  &lt;span class="ui-breadcrumb-sep"&gt;›&lt;/span&gt;
+  &lt;span class="ui-breadcrumb-item active"&gt;组件&lt;/span&gt;
+&lt;/nav&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-breadcrumb</code></td>
+              <td>面包屑容器</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-breadcrumb-item</code></td>
+              <td>面包屑项</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-breadcrumb-item.active</code></td>
+              <td>当前激活项</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-breadcrumb-sep</code></td>
+              <td>分隔符</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

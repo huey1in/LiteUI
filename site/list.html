@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>列表 List - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>列表 List</h1>
+      <p class="docs-lead">通用列表组件，用于展示一系列相关的内容。</p>
+
+      <section class="docs-section">
+        <h2>基础列表</h2>
+        <div class="docs-example">
+          <ul class="ui-list">
+            <li class="ui-list-item">
+              <div class="ui-list-item-content">
+                <div class="ui-list-item-title">列表项标题</div>
+                <div class="ui-list-item-desc">这是列表项的描述信息</div>
+              </div>
+            </li>
+            <li class="ui-list-item">
+              <div class="ui-list-item-content">
+                <div class="ui-list-item-title">第二个列表项</div>
+                <div class="ui-list-item-desc">描述信息可以是多行的内容</div>
+              </div>
+            </li>
+            <li class="ui-list-item">
+              <div class="ui-list-item-content">
+                <div class="ui-list-item-title">第三个列表项</div>
+                <div class="ui-list-item-desc">支持悬停效果</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;ul class="ui-list"&gt;
+  &lt;li class="ui-list-item"&gt;
+    &lt;div class="ui-list-item-content"&gt;
+      &lt;div class="ui-list-item-title"&gt;列表项标题&lt;/div&gt;
+      &lt;div class="ui-list-item-desc"&gt;这是列表项的描述信息&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>带操作按钮</h2>
+        <div class="docs-example">
+          <ul class="ui-list">
+            <li class="ui-list-item">
+              <div class="ui-list-item-content">
+                <div class="ui-list-item-title">任务项 1</div>
+                <div class="ui-list-item-desc">点击右侧按钮进行操作</div>
+              </div>
+              <div class="ui-list-item-action">
+                <button class="ui-btn ui-btn-sm ui-btn-primary">操作</button>
+              </div>
+            </li>
+            <li class="ui-list-item">
+              <div class="ui-list-item-content">
+                <div class="ui-list-item-title">任务项 2</div>
+                <div class="ui-list-item-desc">已完成的任务</div>
+              </div>
+              <div class="ui-list-item-action">
+                <span class="ui-badge ui-badge-success">完成</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <pre class="ui-code-block" data-lang="html">&lt;ul class="ui-list"&gt;
+  &lt;li class="ui-list-item"&gt;
+    &lt;div class="ui-list-item-content"&gt;
+      &lt;div class="ui-list-item-title"&gt;任务项 1&lt;/div&gt;
+      &lt;div class="ui-list-item-desc"&gt;点击右侧按钮进行操作&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-list-item-action"&gt;
+      &lt;button class="ui-btn ui-btn-sm ui-btn-primary"&gt;操作&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+      </section>
+
+      <section class="docs-section">
+        <h2>样式类</h2>
+        <table class="ui-table">
+          <thead>
+            <tr>
+              <th>类名</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="ui-code">ui-list</code></td>
+              <td>列表容器</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-list-item</code></td>
+              <td>列表项</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-list-item-content</code></td>
+              <td>列表项内容区</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-list-item-title</code></td>
+              <td>列表项标题</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-list-item-desc</code></td>
+              <td>列表项描述</td>
+            </tr>
+            <tr>
+              <td><code class="ui-code">ui-list-item-action</code></td>
+              <td>列表项操作区</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>

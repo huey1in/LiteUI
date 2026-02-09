@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>手风琴 Accordion - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>手风琴 Accordion</h1>
+      <p class="docs-lead">可折叠的内容面板，用于展示分组信息。</p>
+
+      <h2>基础用法</h2>
+      <div class="docs-demo">
+        <div class="ui-accordion">
+          <div class="ui-accordion-item">
+            <button class="ui-accordion-header">
+              什么是 LiteUI？
+              <span class="ui-accordion-icon">▼</span>
+            </button>
+            <div class="ui-accordion-content">
+              <div class="ui-accordion-body">
+                LiteUI 是一个轻量级的前端组件库，提供简洁优雅的 UI 组件，帮助开发者快速构建现代化的 Web 应用。
+              </div>
+            </div>
+          </div>
+          
+          <div class="ui-accordion-item">
+            <button class="ui-accordion-header">
+              如何安装？
+              <span class="ui-accordion-icon">▼</span>
+            </button>
+            <div class="ui-accordion-content">
+              <div class="ui-accordion-body">
+                可以通过 npm 安装：<code class="ui-code">npm install @1ing/liteui</code>，或者直接使用 CDN 引入。
+              </div>
+            </div>
+          </div>
+          
+          <div class="ui-accordion-item">
+            <button class="ui-accordion-header">
+              支持哪些浏览器？
+              <span class="ui-accordion-icon">▼</span>
+            </button>
+            <div class="ui-accordion-content">
+              <div class="ui-accordion-body">
+                支持所有现代浏览器，包括 Chrome、Firefox、Safari 和 Edge 的最新版本。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-accordion"&gt;
+  &lt;div class="ui-accordion-item"&gt;
+    &lt;button class="ui-accordion-header"&gt;
+      标题
+      &lt;span class="ui-accordion-icon"&gt;▼&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="ui-accordion-content"&gt;
+      &lt;div class="ui-accordion-body"&gt;
+        内容
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>默认展开</h2>
+      <div class="docs-demo">
+        <div class="ui-accordion">
+          <div class="ui-accordion-item open">
+            <button class="ui-accordion-header">
+              默认展开的项
+              <span class="ui-accordion-icon">▼</span>
+            </button>
+            <div class="ui-accordion-content">
+              <div class="ui-accordion-body">
+                添加 <code class="ui-code">open</code> 类可以让手风琴项默认展开。
+              </div>
+            </div>
+          </div>
+          
+          <div class="ui-accordion-item">
+            <button class="ui-accordion-header">
+              默认折叠的项
+              <span class="ui-accordion-icon">▼</span>
+            </button>
+            <div class="ui-accordion-content">
+              <div class="ui-accordion-body">
+                这个项默认是折叠状态。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-accordion-item open"&gt;
+  &lt;!-- 添加 open 类默认展开 --&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>JavaScript API</h2>
+      <div class="docs-demo">
+        <div class="ui-flex ui-gap-2 ui-mb-4">
+          <button class="ui-btn ui-btn-primary" onclick="UI.accordion.open('.demo-accordion .ui-accordion-item:first-child')">
+            展开第一项
+          </button>
+          <button class="ui-btn ui-btn-secondary" onclick="UI.accordion.close('.demo-accordion .ui-accordion-item:first-child')">
+            折叠第一项
+          </button>
+          <button class="ui-btn ui-btn-ghost" onclick="UI.accordion.toggle('.demo-accordion .ui-accordion-item:first-child')">
+            切换第一项
+          </button>
+        </div>
+        
+        <div class="ui-accordion demo-accordion">
+          <div class="ui-accordion-item">
+            <button class="ui-accordion-header">
+              可通过 API 控制
+              <span class="ui-accordion-icon">▼</span>
+            </button>
+            <div class="ui-accordion-content">
+              <div class="ui-accordion-body">
+                使用 JavaScript API 可以编程式地控制手风琴的展开和折叠。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>// 展开
+UI.accordion.open(element);
+
+// 折叠
+UI.accordion.close(element);
+
+// 切换
+UI.accordion.toggle(element);</code></pre>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-accordion</code></td>
+            <td>手风琴容器</td>
+          </tr>
+          <tr>
+            <td><code>.ui-accordion-item</code></td>
+            <td>手风琴项</td>
+          </tr>
+          <tr>
+            <td><code>.ui-accordion-item.open</code></td>
+            <td>展开状态的手风琴项</td>
+          </tr>
+          <tr>
+            <td><code>.ui-accordion-header</code></td>
+            <td>手风琴标题（可点击）</td>
+          </tr>
+          <tr>
+            <td><code>.ui-accordion-icon</code></td>
+            <td>展开/折叠图标</td>
+          </tr>
+          <tr>
+            <td><code>.ui-accordion-content</code></td>
+            <td>内容容器</td>
+          </tr>
+          <tr>
+            <td><code>.ui-accordion-body</code></td>
+            <td>内容主体</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

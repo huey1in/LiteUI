@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>骨架屏 Skeleton - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>骨架屏 Skeleton</h1>
+      <p class="docs-lead">用于内容加载时的占位显示，提升用户体验。</p>
+
+      <h2>基础用法</h2>
+      <div class="docs-demo">
+        <div class="ui-skeleton ui-skeleton-text"></div>
+        <div class="ui-skeleton ui-skeleton-text"></div>
+        <div class="ui-skeleton ui-skeleton-text"></div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-skeleton ui-skeleton-text"&gt;&lt;/div&gt;
+&lt;div class="ui-skeleton ui-skeleton-text"&gt;&lt;/div&gt;
+&lt;div class="ui-skeleton ui-skeleton-text"&gt;&lt;/div&gt;</code></pre>
+
+      <h2>头像骨架</h2>
+      <div class="docs-demo">
+        <div class="ui-flex ui-gap-4 ui-items-center">
+          <div class="ui-skeleton ui-skeleton-avatar"></div>
+          <div class="ui-flex-1">
+            <div class="ui-skeleton ui-skeleton-text" style="width: 40%;"></div>
+            <div class="ui-skeleton ui-skeleton-text" style="width: 60%;"></div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-flex ui-gap-4 ui-items-center"&gt;
+  &lt;div class="ui-skeleton ui-skeleton-avatar"&gt;&lt;/div&gt;
+  &lt;div class="ui-flex-1"&gt;
+    &lt;div class="ui-skeleton ui-skeleton-text" style="width: 40%;"&gt;&lt;/div&gt;
+    &lt;div class="ui-skeleton ui-skeleton-text" style="width: 60%;"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>卡片骨架</h2>
+      <div class="docs-demo">
+        <div class="ui-card">
+          <div class="ui-skeleton ui-skeleton-image ui-mb-4"></div>
+          <div class="ui-skeleton ui-skeleton-title"></div>
+          <div class="ui-skeleton ui-skeleton-text"></div>
+          <div class="ui-skeleton ui-skeleton-text"></div>
+          <div class="ui-flex ui-gap-2 ui-mt-4">
+            <div class="ui-skeleton ui-skeleton-btn"></div>
+            <div class="ui-skeleton ui-skeleton-btn"></div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-card"&gt;
+  &lt;div class="ui-skeleton ui-skeleton-image ui-mb-4"&gt;&lt;/div&gt;
+  &lt;div class="ui-skeleton ui-skeleton-title"&gt;&lt;/div&gt;
+  &lt;div class="ui-skeleton ui-skeleton-text"&gt;&lt;/div&gt;
+  &lt;div class="ui-skeleton ui-skeleton-text"&gt;&lt;/div&gt;
+  &lt;div class="ui-flex ui-gap-2 ui-mt-4"&gt;
+    &lt;div class="ui-skeleton ui-skeleton-btn"&gt;&lt;/div&gt;
+    &lt;div class="ui-skeleton ui-skeleton-btn"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>列表骨架</h2>
+      <div class="docs-demo">
+        <div class="ui-space-y-4">
+          <div class="ui-flex ui-gap-4">
+            <div class="ui-skeleton ui-skeleton-avatar"></div>
+            <div class="ui-flex-1">
+              <div class="ui-skeleton ui-skeleton-text" style="width: 30%;"></div>
+              <div class="ui-skeleton ui-skeleton-text"></div>
+            </div>
+          </div>
+          <div class="ui-flex ui-gap-4">
+            <div class="ui-skeleton ui-skeleton-avatar"></div>
+            <div class="ui-flex-1">
+              <div class="ui-skeleton ui-skeleton-text" style="width: 30%;"></div>
+              <div class="ui-skeleton ui-skeleton-text"></div>
+            </div>
+          </div>
+          <div class="ui-flex ui-gap-4">
+            <div class="ui-skeleton ui-skeleton-avatar"></div>
+            <div class="ui-flex-1">
+              <div class="ui-skeleton ui-skeleton-text" style="width: 30%;"></div>
+              <div class="ui-skeleton ui-skeleton-text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-skeleton</code></td>
+            <td>基础骨架屏样式</td>
+          </tr>
+          <tr>
+            <td><code>.ui-skeleton-text</code></td>
+            <td>文本骨架</td>
+          </tr>
+          <tr>
+            <td><code>.ui-skeleton-title</code></td>
+            <td>标题骨架</td>
+          </tr>
+          <tr>
+            <td><code>.ui-skeleton-avatar</code></td>
+            <td>头像骨架</td>
+          </tr>
+          <tr>
+            <td><code>.ui-skeleton-btn</code></td>
+            <td>按钮骨架</td>
+          </tr>
+          <tr>
+            <td><code>.ui-skeleton-card</code></td>
+            <td>卡片骨架</td>
+          </tr>
+          <tr>
+            <td><code>.ui-skeleton-image</code></td>
+            <td>图片骨架</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

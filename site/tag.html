@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>标签 Tag - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>标签 Tag</h1>
+      <p class="docs-lead">用于标记和分类的小标签。</p>
+
+      <h2>基础用法</h2>
+      <div class="docs-demo">
+        <div class="ui-flex ui-gap-2">
+          <span class="ui-tag">默认</span>
+          <span class="ui-tag ui-tag-primary">主要</span>
+          <span class="ui-tag ui-tag-success">成功</span>
+          <span class="ui-tag ui-tag-warning">警告</span>
+          <span class="ui-tag ui-tag-danger">危险</span>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;span class="ui-tag"&gt;默认&lt;/span&gt;
+&lt;span class="ui-tag ui-tag-primary"&gt;主要&lt;/span&gt;
+&lt;span class="ui-tag ui-tag-success"&gt;成功&lt;/span&gt;
+&lt;span class="ui-tag ui-tag-warning"&gt;警告&lt;/span&gt;
+&lt;span class="ui-tag ui-tag-danger"&gt;危险&lt;/span&gt;</code></pre>
+
+      <h2>标签组</h2>
+      <div class="docs-demo">
+        <div class="ui-flex ui-gap-2 ui-flex-wrap">
+          <span class="ui-tag">React</span>
+          <span class="ui-tag">Vue</span>
+          <span class="ui-tag">Angular</span>
+          <span class="ui-tag">Svelte</span>
+          <span class="ui-tag">Next.js</span>
+          <span class="ui-tag">Nuxt</span>
+        </div>
+      </div>
+
+      <h2>在卡片中使用</h2>
+      <div class="docs-demo">
+        <div class="ui-card">
+          <h3 class="ui-card-title">文章标题</h3>
+          <p class="ui-text-muted ui-mb-4">这是一篇关于前端开发的文章...</p>
+          <div class="ui-flex ui-gap-2">
+            <span class="ui-tag ui-tag-primary">前端</span>
+            <span class="ui-tag ui-tag-success">JavaScript</span>
+            <span class="ui-tag">教程</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>与徽章的区别</h2>
+      <div class="docs-demo">
+        <div class="ui-flex ui-gap-4 ui-items-center">
+          <div>
+            <div class="ui-text-sm ui-text-muted ui-mb-2">标签 Tag</div>
+            <span class="ui-tag">标签</span>
+          </div>
+          <div>
+            <div class="ui-text-sm ui-text-muted ui-mb-2">徽章 Badge</div>
+            <span class="ui-badge">徽章</span>
+          </div>
+        </div>
+      </div>
+      <div class="ui-callout ui-callout-info ui-mt-4">
+        <div class="ui-callout-content">
+          <div class="ui-callout-title">使用建议</div>
+          标签(Tag)通常用于分类和筛选，徽章(Badge)用于状态标识和计数。标签更扁平，徽章更圆润。
+        </div>
+      </div>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-tag</code></td>
+            <td>基础标签</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tag-primary</code></td>
+            <td>主要标签</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tag-success</code></td>
+            <td>成功标签</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tag-warning</code></td>
+            <td>警告标签</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tag-danger</code></td>
+            <td>危险标签</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>标签页 Tabs - LiteUI</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="docs.js" defer></script>
+</head>
+<body class="ui-base">
+  <aside class="docs-sidebar"></aside>
+
+  <main class="docs-main">
+    <div class="docs-content">
+      <h1>标签页 Tabs</h1>
+      <p class="docs-lead">分隔内容上下文，用于在同一区域展示不同内容。</p>
+
+      <h2>基础用法</h2>
+      <div class="docs-demo">
+        <div class="ui-tabs">
+          <button class="ui-tab active" data-tab="tab1">首页</button>
+          <button class="ui-tab" data-tab="tab2">文档</button>
+          <button class="ui-tab" data-tab="tab3">关于</button>
+        </div>
+        
+        <div data-tabs-container style="margin-top: 1rem;">
+          <div class="ui-tab-panel active" data-panel="tab1">
+            <div class="ui-card">
+              <h3 class="ui-card-title">首页内容</h3>
+              <p>这是首页标签的内容。</p>
+            </div>
+          </div>
+          
+          <div class="ui-tab-panel" data-panel="tab2" style="display: none;">
+            <div class="ui-card">
+              <h3 class="ui-card-title">文档内容</h3>
+              <p>这是文档标签的内容。</p>
+            </div>
+          </div>
+          
+          <div class="ui-tab-panel" data-panel="tab3" style="display: none;">
+            <div class="ui-card">
+              <h3 class="ui-card-title">关于内容</h3>
+              <p>这是关于标签的内容。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;div class="ui-tabs"&gt;
+  &lt;button class="ui-tab active" data-tab="tab1"&gt;首页&lt;/button&gt;
+  &lt;button class="ui-tab" data-tab="tab2"&gt;文档&lt;/button&gt;
+  &lt;button class="ui-tab" data-tab="tab3"&gt;关于&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div data-tabs-container&gt;
+  &lt;div class="ui-tab-panel active" data-panel="tab1"&gt;
+    首页内容
+  &lt;/div&gt;
+  &lt;div class="ui-tab-panel" data-panel="tab2" style="display: none;"&gt;
+    文档内容
+  &lt;/div&gt;
+  &lt;div class="ui-tab-panel" data-panel="tab3" style="display: none;"&gt;
+    关于内容
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>等宽标签</h2>
+      <div class="docs-demo">
+        <div class="ui-tabs">
+          <button class="ui-tab active" data-tab="a">选项 A</button>
+          <button class="ui-tab" data-tab="b">选项 B</button>
+          <button class="ui-tab" data-tab="c">选项 C</button>
+          <button class="ui-tab" data-tab="d">选项 D</button>
+        </div>
+      </div>
+      <pre class="docs-code"><code>&lt;!-- 标签会自动等宽分布 --&gt;
+&lt;div class="ui-tabs"&gt;
+  &lt;button class="ui-tab"&gt;选项 A&lt;/button&gt;
+  &lt;button class="ui-tab"&gt;选项 B&lt;/button&gt;
+  &lt;button class="ui-tab"&gt;选项 C&lt;/button&gt;
+  &lt;button class="ui-tab"&gt;选项 D&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>带图标的标签</h2>
+      <div class="docs-demo">
+        <div class="ui-tabs">
+          <button class="ui-tab active" data-tab="home">🏠 首页</button>
+          <button class="ui-tab" data-tab="docs">📚 文档</button>
+          <button class="ui-tab" data-tab="settings">⚙️ 设置</button>
+        </div>
+      </div>
+
+      <h2>卡片式标签</h2>
+      <div class="docs-demo">
+        <div class="ui-card">
+          <div class="ui-tabs">
+            <button class="ui-tab active" data-tab="preview">预览</button>
+            <button class="ui-tab" data-tab="code">代码</button>
+            <button class="ui-tab" data-tab="result">结果</button>
+          </div>
+          
+          <div data-tabs-container style="margin-top: 1rem;">
+            <div class="ui-tab-panel active" data-panel="preview">
+              <p>这是预览面板的内容。</p>
+            </div>
+            <div class="ui-tab-panel" data-panel="code" style="display: none;">
+              <div class="ui-code-block">console.log('Hello LiteUI');</div>
+            </div>
+            <div class="ui-tab-panel" data-panel="result" style="display: none;">
+              <p>这是结果面板的内容。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>样式类</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>类名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.ui-tabs</code></td>
+            <td>标签页容器</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tab</code></td>
+            <td>标签按钮</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tab.active</code></td>
+            <td>激活状态的标签</td>
+          </tr>
+          <tr>
+            <td><code>.ui-tab-panel</code></td>
+            <td>内容面板</td>
+          </tr>
+          <tr>
+            <td><code>data-tab="id"</code></td>
+            <td>标签的标识符</td>
+          </tr>
+          <tr>
+            <td><code>data-panel="id"</code></td>
+            <td>面板的标识符（与标签对应）</td>
+          </tr>
+          <tr>
+            <td><code>data-tabs-container</code></td>
+            <td>标记面板容器</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>使用说明</h2>
+      <div class="ui-callout ui-callout-info">
+        <div class="ui-callout-content">
+          <div class="ui-callout-title">自动初始化</div>
+          标签页会自动初始化，点击标签时会自动切换对应的内容面板。确保标签的 <code class="ui-code">data-tab</code> 值与面板的 <code class="ui-code">data-panel</code> 值一致。
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

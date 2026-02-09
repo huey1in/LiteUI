@@ -18,7 +18,6 @@ npm install @1ing/liteui
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@1ing/liteui/dist/lite-ui.css">
 <script src="https://unpkg.com/@1ing/liteui/dist/lite-ui.min.js"></script>
-<script src="https://unpkg.com/@1ing/liteui/dist/lite-icons.min.js"></script>
 ```
 
 

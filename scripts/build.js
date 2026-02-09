@@ -37,21 +37,7 @@ async function build() {
   fs.writeFileSync(path.join(distDir, 'lite-ui.esm.js'), esmJS);
   console.log('✓ JS (ESM) built');
 
-  // 4. 构建图标库
-  const iconsSource = fs.readFileSync(path.join(__dirname, '../lite-icons.js'), 'utf8');
-  fs.writeFileSync(path.join(distDir, 'lite-icons.js'), iconsSource);
-  const iconsMinified = await minify(iconsSource, { compress: true, mangle: true });
-  fs.writeFileSync(path.join(distDir, 'lite-icons.min.js'), iconsMinified.code);
-  
-  // ESM 图标
-  const esmIcons = iconsSource
-    .replace(/if \(typeof window !== 'undefined'\)[\s\S]*?window\.icon = icon;\s*\}/, '')
-    .replace(/if \(typeof module !== 'undefined'[\s\S]*?module\.exports[\s\S]*?\}/, '')
-    + '\nexport { Icons, icon };\nexport default Icons;';
-  fs.writeFileSync(path.join(distDir, 'lite-icons.esm.js'), esmIcons);
-  console.log('✓ Icons built');
-
-  // 5. 生成类型定义
+  // 4. 生成类型定义
   const dts = `declare const UI: {
   version: string;
   theme: {
@@ -118,10 +104,7 @@ async function build() {
   init(): void;
 };
 
-declare const Icons: Record<string, string>;
-declare function icon(name: string, className?: string): string;
-
-export { UI, Icons, icon };
+export { UI };
 export default UI;
 `;
   fs.writeFileSync(path.join(distDir, 'lite-ui.d.ts'), dts);

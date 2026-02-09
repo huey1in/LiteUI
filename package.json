@@ -1,6 +1,6 @@
 {
   "name": "@1ing/liteui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "轻量级前端组件库",
   "main": "dist/lite-ui.js",
   "module": "dist/lite-ui.esm.js",
@@ -16,11 +16,7 @@
       "require": "./dist/lite-ui.js",
       "types": "./dist/lite-ui.d.ts"
     },
-    "./css": "./dist/lite-ui.css",
-    "./icons": {
-      "import": "./dist/lite-icons.esm.js",
-      "require": "./dist/lite-icons.js"
-    }
+    "./css": "./dist/lite-ui.css"
   },
   "scripts": {
     "build": "node scripts/build.js",
