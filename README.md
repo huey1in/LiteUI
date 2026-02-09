@@ -1,6 +1,6 @@
 # LiteUI 组件库
 
-[![GitHub Stars](https://img.shields.io/github/stars/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![npm Version](https://img.shields.io/npm/v/liteui?style=flat-square&logo=npm)](https://www.npmjs.com/package/liteui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=liteui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/liteui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![npm Version](https://img.shields.io/npm/v/@1ing/liteui?style=flat-square&logo=npm)](https://www.npmjs.com/package/@1ing/liteui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=liteui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/liteui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 [![GitHub Stars](https://img.shields.io/github/stars/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![npm Version](https://img.shields.io/npm/v/1inui?style=flat-square&logo=npm)](https://www.npmjs.com/package/1inui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=1inui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/1inui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
@@ -14,30 +14,30 @@
 ## 安装
 
 ```bash
-npm install liteui
+npm install @1ing/liteui
 ```
 
 ## 使用
 
 ### CDN 方式
 ```html
-<link rel="stylesheet" href="https://unpkg.com/liteui/dist/lite-ui.css">
-<script src="https://unpkg.com/liteui/dist/lite-ui.min.js"></script>
-<script src="https://unpkg.com/liteui/dist/lite-icons.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@1ing/liteui/dist/lite-ui.css">
+<script src="https://unpkg.com/@1ing/liteui/dist/lite-ui.min.js"></script>
+<script src="https://unpkg.com/@1ing/liteui/dist/lite-icons.min.js"></script>
 ```
 
 ### ES Module
 ```javascript
-import UI from 'liteui';
-import 'liteui/css';
-import { Icons, icon } from 'liteui/icons';
+import UI from '@1ing/liteui';
+import '@1ing/liteui/css';
+import { Icons, icon } from '@1ing/liteui/icons';
 
 UI.toast.success('Hello!');
 ```
 
 ### CommonJS
 ```javascript
-const { UI } = require('liteui');
+const { UI } = require('@1ing/liteui');
 ```
 
 ## 组件列表
