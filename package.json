@@ -1,6 +1,6 @@
 {
-  "name": "liteui",
-  "version": "1.0.2",
+  "name": "@1ing/liteui",
+  "version": "1.0.0",
   "description": "轻量级前端组件库",
   "main": "dist/lite-ui.js",
   "module": "dist/lite-ui.esm.js",
