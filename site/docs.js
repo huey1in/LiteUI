@@ -3,7 +3,7 @@
 // 动态加载 LiteUI 资源
 (function() {
   // 配置：切换为 true 使用本地资源，false 使用 CDN
-  const USE_LOCAL = true;
+  const USE_LOCAL = false;
   
   const CDN_BASE = 'https://unpkg.com/@1ing/liteui/dist/';
   const LOCAL_BASE = '../';
