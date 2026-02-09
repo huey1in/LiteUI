@@ -11,20 +11,20 @@ if (!fs.existsSync(distDir)) {
 }
 
 async function build() {
-  console.log('Building 1in-ui...\n');
+  console.log('Building LiteUI...\n');
 
   // 1. 构建 CSS
-  const cssSource = fs.readFileSync(path.join(__dirname, '../1in-ui.css'), 'utf8');
+  const cssSource = fs.readFileSync(path.join(__dirname, '../lite-ui.css'), 'utf8');
   const cssMinified = new CleanCSS({ level: 2 }).minify(cssSource);
-  fs.writeFileSync(path.join(distDir, '1in-ui.css'), cssSource);
-  fs.writeFileSync(path.join(distDir, '1in-ui.min.css'), cssMinified.styles);
+  fs.writeFileSync(path.join(distDir, 'lite-ui.css'), cssSource);
+  fs.writeFileSync(path.join(distDir, 'lite-ui.min.css'), cssMinified.styles);
   console.log('✓ CSS built');
 
   // 2. 构建主 JS (UMD)
-  const jsSource = fs.readFileSync(path.join(__dirname, '../1in-ui.js'), 'utf8');
-  fs.writeFileSync(path.join(distDir, '1in-ui.js'), jsSource);
+  const jsSource = fs.readFileSync(path.join(__dirname, '../lite-ui.js'), 'utf8');
+  fs.writeFileSync(path.join(distDir, 'lite-ui.js'), jsSource);
   const jsMinified = await minify(jsSource, { compress: true, mangle: true });
-  fs.writeFileSync(path.join(distDir, '1in-ui.min.js'), jsMinified.code);
+  fs.writeFileSync(path.join(distDir, 'lite-ui.min.js'), jsMinified.code);
   console.log('✓ JS (UMD) built');
 
   // 3. 构建 ESM 版本
@@ -34,21 +34,21 @@ async function build() {
     .replace(/global\.UI = UI;/, 'export { UI };')
     .replace(/\/\/ DOM Ready[\s\S]*?UI\.init\(\);[\s\S]*?\}/, '')
     + '\nexport default UI;';
-  fs.writeFileSync(path.join(distDir, '1in-ui.esm.js'), esmJS);
+  fs.writeFileSync(path.join(distDir, 'lite-ui.esm.js'), esmJS);
   console.log('✓ JS (ESM) built');
 
   // 4. 构建图标库
-  const iconsSource = fs.readFileSync(path.join(__dirname, '../1in-icons.js'), 'utf8');
-  fs.writeFileSync(path.join(distDir, '1in-icons.js'), iconsSource);
+  const iconsSource = fs.readFileSync(path.join(__dirname, '../lite-icons.js'), 'utf8');
+  fs.writeFileSync(path.join(distDir, 'lite-icons.js'), iconsSource);
   const iconsMinified = await minify(iconsSource, { compress: true, mangle: true });
-  fs.writeFileSync(path.join(distDir, '1in-icons.min.js'), iconsMinified.code);
+  fs.writeFileSync(path.join(distDir, 'lite-icons.min.js'), iconsMinified.code);
   
   // ESM 图标
   const esmIcons = iconsSource
     .replace(/if \(typeof window !== 'undefined'\)[\s\S]*?window\.icon = icon;\s*\}/, '')
     .replace(/if \(typeof module !== 'undefined'[\s\S]*?module\.exports[\s\S]*?\}/, '')
     + '\nexport { Icons, icon };\nexport default Icons;';
-  fs.writeFileSync(path.join(distDir, '1in-icons.esm.js'), esmIcons);
+  fs.writeFileSync(path.join(distDir, 'lite-icons.esm.js'), esmIcons);
   console.log('✓ Icons built');
 
   // 5. 生成类型定义
@@ -124,7 +124,7 @@ declare function icon(name: string, className?: string): string;
 export { UI, Icons, icon };
 export default UI;
 `;
-  fs.writeFileSync(path.join(distDir, '1in-ui.d.ts'), dts);
+  fs.writeFileSync(path.join(distDir, 'lite-ui.d.ts'), dts);
   console.log('✓ TypeScript definitions generated');
 
   console.log('\n✅ Build complete!');

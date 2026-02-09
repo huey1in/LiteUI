@@ -1,41 +1,43 @@
-# 1in UI 组件库
+# LiteUI 组件库
+
+[![GitHub Stars](https://img.shields.io/github/stars/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![npm Version](https://img.shields.io/npm/v/liteui?style=flat-square&logo=npm)](https://www.npmjs.com/package/liteui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=liteui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/liteui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 [![GitHub Stars](https://img.shields.io/github/stars/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![npm Version](https://img.shields.io/npm/v/1inui?style=flat-square&logo=npm)](https://www.npmjs.com/package/1inui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=1inui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/1inui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ### 文档: https://ui.yinxh.fun
 ### 你可以预览库组件风格在以下网站
 
-- https://1incode.yinxh.fun
+- https://liteui.yinxh.fun
 - https://step.yinxh.fun
 
 
 ## 安装
 
 ```bash
-npm install 1in-ui
+npm install liteui
 ```
 
 ## 使用
 
 ### CDN 方式
 ```html
-<link rel="stylesheet" href="https://unpkg.com/1in-ui/dist/1in-ui.css">
-<script src="https://unpkg.com/1in-ui/dist/1in-ui.min.js"></script>
-<script src="https://unpkg.com/1in-ui/dist/1in-icons.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/liteui/dist/lite-ui.css">
+<script src="https://unpkg.com/liteui/dist/lite-ui.min.js"></script>
+<script src="https://unpkg.com/liteui/dist/lite-icons.min.js"></script>
 ```
 
 ### ES Module
 ```javascript
-import UI from '1in-ui';
-import '1in-ui/css';
-import { Icons, icon } from '1in-ui/icons';
+import UI from 'liteui';
+import 'liteui/css';
+import { Icons, icon } from 'liteui/icons';
 
 UI.toast.success('Hello!');
 ```
 
 ### CommonJS
 ```javascript
-const { UI } = require('1in-ui');
+const { UI } = require('liteui');
 ```
 
 ## 组件列表
@@ -107,19 +109,19 @@ UI.utils.uniqueId(prefix)
 ## 文件结构
 
 ```
-1in-ui/
-├── 1in-ui.css      # 样式文件
-├── 1in-ui.js       # JavaScript 组件
-├── 1in-icons.js    # SVG 图标库
-├── demo.html       # 演示页面
-└── README.md       # 文档
+liteui/
+├── lite-ui.css      # 样式文件
+├── lite-ui.js       # JavaScript 组件
+├── lite-icons.js    # SVG 图标库
+├── demo.html        # 演示页面
+└── README.md        # 文档
 ```
 
 ## 图标库
 
 引入图标库：
 ```html
-<script src="1in-icons.js"></script>
+<script src="lite-icons.js"></script>
 ```
 
 使用图标：

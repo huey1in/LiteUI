@@ -1,5 +1,5 @@
 /**
- * 1in Icons - SVG 图标库
+ * LiteUI Icons - SVG 图标库
  * 风格: 线性图标, stroke-width="2", 圆角端点
  * Version: 1.0.0
  */

@@ -1,4 +1,4 @@
-/* 1in UI v1.1.0 */
+/* LiteUI v1.1.0 */
 
 /* Nunito Font + Noto Sans SC (中文) */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap');
@@ -60,40 +60,50 @@ body {
 }
 
 
+/* 全局滚动条样式 - 方角设计 */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c4c9ce;
-  border-radius: 4px;
+  background: #cbd5e1;
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8adb3;
+  background: #94a3b8;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #1a1b1e;
+  background: #475569;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #232428;
+  background: #64748b;
 }
 
-/* Firefox ?*/
+/* 禁用滚动条上下按钮 */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox 滚动条样式 */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #c4c9ce transparent;
+  scrollbar-color: #cbd5e1 #f1f5f9;
 }
 
 .dark * {
-  scrollbar-color: #1a1b1e transparent;
+  scrollbar-color: #475569 #1e293b;
 }
 
 .ui-base {

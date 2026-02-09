@@ -1,5 +1,5 @@
 /**
- * 1in Icons - SVG 图标库
+ * LiteUI Icons - SVG 图标库
  * 风格: 线性图标, stroke-width="2", 圆角端点
  * Version: 1.0.0
  */
@@ -149,12 +149,11 @@ function icon(name, className = '') {
 }
 
 // 暴露到全局
-if (typeof window !== 'undefined') {
-  window.Icons = Icons;
-  window.icon = icon;
-}
+
 
 // ES Module 导出
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { Icons, icon };
+;
 }
+
+export { Icons, icon };
+export default Icons;

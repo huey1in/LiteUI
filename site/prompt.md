@@ -1,17 +1,27 @@
-# 1inUI 组件库
+# LiteUI MCP 知识库
 
-轻量级前端组件库，12KB JS，零依赖，原生深色模式。
+这是 LiteUI 组件库的 MCP (Model Context Protocol) 知识库文档，用于 AI 助手快速学习和使用 LiteUI。
 
-## 引入
+## 基本信息
+
+**LiteUI** 是一个轻量级前端组件库：
+- JS 压缩后仅 12KB
+- 零依赖，无需任何第三方库
+- 原生支持深色模式
+- 60+ SVG 图标库
+
+## 快速引入
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/1inui/dist/1in-ui.min.css">
-<script src="https://unpkg.com/1inui/dist/1in-ui.min.js" defer></script>
+<link rel="stylesheet" href="https://unpkg.com/liteui/dist/lite-ui.min.css">
+<script src="https://unpkg.com/liteui/dist/lite-ui.min.js" defer></script>
+<script src="https://unpkg.com/liteui/dist/lite-icons.min.js" defer></script>
 ```
 
-- body 必须加 `class="ui-base"` 应用基础样式
-- 深色模式：html 加 `class="dark"`，或用 `UI.theme.toggle()`
-- 图标库可选：`<script src="https://unpkg.com/1inui/dist/1in-icons.min.js" defer></script>`
+**重要规则：**
+- body 必须添加 `class="ui-base"` 应用基础样式
+- 深色模式：在 html 标签添加 `class="dark"`，或使用 `UI.theme.toggle()`
+- 所有组件类名以 `ui-` 开头
 
 ## 组件
 
@@ -354,7 +364,7 @@
 
 ### 代码 Code
 ```html
-<code class="ui-code">npm install 1inui</code>
+<code class="ui-code">npm install liteui</code>
 <pre class="ui-code-block">
 const UI = window.UI;
 UI.toast.success('Hello!');

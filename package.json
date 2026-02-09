@@ -1,25 +1,25 @@
 {
-  "name": "1inui",
+  "name": "liteui",
   "version": "1.0.2",
   "description": "轻量级前端组件库",
-  "main": "dist/1in-ui.js",
-  "module": "dist/1in-ui.esm.js",
-  "style": "dist/1in-ui.css",
-  "types": "dist/1in-ui.d.ts",
+  "main": "dist/lite-ui.js",
+  "module": "dist/lite-ui.esm.js",
+  "style": "dist/lite-ui.css",
+  "types": "dist/lite-ui.d.ts",
   "files": [
     "dist",
     "README.md"
   ],
   "exports": {
     ".": {
-      "import": "./dist/1in-ui.esm.js",
-      "require": "./dist/1in-ui.js",
-      "types": "./dist/1in-ui.d.ts"
+      "import": "./dist/lite-ui.esm.js",
+      "require": "./dist/lite-ui.js",
+      "types": "./dist/lite-ui.d.ts"
     },
-    "./css": "./dist/1in-ui.css",
+    "./css": "./dist/lite-ui.css",
     "./icons": {
-      "import": "./dist/1in-icons.esm.js",
-      "require": "./dist/1in-icons.js"
+      "import": "./dist/lite-icons.esm.js",
+      "require": "./dist/lite-icons.js"
     }
   },
   "scripts": {
@@ -29,16 +29,16 @@
   "keywords": [
     "ui",
     "components",
-    "discord",
     "css",
     "frontend",
-    "lightweight"
+    "lightweight",
+    "liteui"
   ],
   "author": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/huey1in/liteui"
   },
   "devDependencies": {
     "clean-css": "^5.3.3",

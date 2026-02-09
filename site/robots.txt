@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# AI 爬虫友好
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Sitemap
+Sitemap: https://liteui.com/sitemap.xml
