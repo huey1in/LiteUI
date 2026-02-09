@@ -2,8 +2,6 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/liteui?style=flat-square&logo=github)](https://github.com/huey1in/liteui)[![npm Version](https://img.shields.io/npm/v/@1ing/liteui?style=flat-square&logo=npm)](https://www.npmjs.com/package/@1ing/liteui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=liteui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/liteui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-[![GitHub Stars](https://img.shields.io/github/stars/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![GitHub Forks](https://img.shields.io/github/forks/huey1in/1inui?style=flat-square&logo=github)](https://github.com/huey1in/1inui)[![npm Version](https://img.shields.io/npm/v/1inui?style=flat-square&logo=npm)](https://www.npmjs.com/package/1inui)[![Repo Views](https://komarev.com/ghpvc/?username=huey1in&repo=1inui&style=flat-square&color=orange&label=Views)](https://github.com/huey1in/1inui)[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-
 ## 文档: https://ui.yinxh.fun
 
 ## 安装
